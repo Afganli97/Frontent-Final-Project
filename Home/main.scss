@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    .blue:hover{
+        color: rgb(92, 149, 255);
+        cursor: pointer;
+    }
+
+    .logo{
+        span{
+            font-size: 13px;
+        }
+        .fa-chevron-down{
+            font-size: 8px;
+        }
+    }
+}
