@@ -33,7 +33,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2 p-2 border-start row">
+                        <div class="col-lg-2 p-2 border-start row justify-content-evenly">
                             <div class="logo-hover col-lg-5 position-relative p-0">
                                 <span class="blue">English <i class="fa-solid fa-chevron-down"></i></span>
                                 <div class="drop d-flex justify-content-evenly align-items-center flex-column close">
@@ -58,12 +58,118 @@
         <div class="navbar-custom pt-4">
             <div class="row justify-content-center">
                 <div class="col-custom">
-                    <div class="row gab flex-nowrap">
+                    <div class="row flex-nowrap">
+                        <div class="location-box position-fixed">
+                            <i class="fa-solid fa-xmark position-absolute x-custom"></i>
+                            <h6>Choose your Delivery Location</h6>
+                            <p>Enter your address and we will specify the offer for your area.</p>
+                            <form action="">
+                                <input type="text" placeholder="Saerch your area">
+                            </form>
+                            <div class="locations">
+                                <div class="row">
+                                    <div class="lacation-name col-lg-8 blue p-0">
+                                        <span>Select a Location</span>
+                                    </div>
+                                    <div class="delivery-price col-lg-2 p-0">
+                                        <span>Clear All</span>
+                                    </div>
+                                </div>
+                               <div class="row">
+                                    <div class="lacation-name col-lg-8 blue p-0">
+                                        <span>Alabama</span>
+                                    </div>
+                                    <div class="delivery-price col-lg-2 p-0">
+                                        <span>Min:$130</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="lacation-name col-lg-8 blue p-0">
+                                            <span>Alaska</span>
+                                    </div>
+                                    <div class="delivery-price col-lg-2 p-0">
+                                        <span>Min:$120</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="lacation-name col-lg-8 blue p-0">
+                                        <span>Arizona</span>
+                                    </div>
+                                    <div class="delivery-price col-lg-2 p-0">
+                                        <span>Min:$150</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="lacation-name col-lg-8 blue p-0">
+                                        <span>California</span>
+                                    </div>
+                                    <div class="delivery-price col-lg-2 p-0">
+                                        <span>Min:$110</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="lacation-name col-lg-8 blue p-0">
+                                        <span>Colorado</span>
+                                    </div>
+                                    <div class="delivery-price col-lg-2 p-0">
+                                        <span>Min:$140</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="lacation-name col-lg-8 blue p-0">
+                                        <span>Florida</span>
+                                    </div>
+                                    <div class="delivery-price col-lg-2 p-0">
+                                        <span>Min:$160</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="lacation-name col-lg-8 blue p-0">
+                                        <span>Georgia</span>
+                                    </div>
+                                    <div class="delivery-price col-lg-2 p-0">
+                                        <span>Min:$120</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="lacation-name col-lg-8 blue p-0">
+                                        <span>Cansas</span>
+                                    </div>
+                                    <div class="delivery-price col-lg-2 p-0">
+                                        <span>Min:$170</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="lacation-name col-lg-8 blue p-0">
+                                        <span>Minnesota</span>
+                                    </div>
+                                    <div class="delivery-price col-lg-2 p-0">
+                                        <span>Min:$120</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="lacation-name col-lg-8 blue p-0">
+                                        <span>New York</span>
+                                    </div>
+                                    <div class="delivery-price col-lg-2 p-0">
+                                        <span>Min:$110</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="lacation-name col-lg-8 blue p-0">
+                                        <span>Washington</span>
+                                    </div>
+                                    <div class="delivery-price col-lg-2 p-0">
+                                        <span>Min:$130</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="bacola-logo col-lg-2 h-80 p-0">
                             <img src="./images/bacola-logo.png" alt="">
                             <p class="text-secondary">Online Grocery Shopping Center</p>
                         </div>
-                        <div class="col-lg-2 h-80 p-0">
+                        <div class="col-lg-2 h-80 ms-2">
                             <div class="location row">
                                 <div class="loc-text d-flex justify-content-center align-items-start flex-column">
                                     <p class="text-secondary">Your location</p>
@@ -76,20 +182,32 @@
                         </div>
                         <div class="col-lg-8 h-80 p-0 d-flex">
                             <div class="search">
-                                <input class="search-input" type="text" placeholder="Search a products...">
+                                <form class="search-form" action="">
+                                    <input class="search-input" type="text" placeholder="Search a products...">
+                                </form>
                                 <div class="search-icon">
+                                    <i class="fa-solid fa-xmark"></i>
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </div>
                             </div>
-                            <div class="basket-icons d-flex justify-content-center align-items-center gap-2">
+                            <div class="basket-icons d-flex justify-content-center align-items-center gap-3 position-relative">
                                 <div class="account-icon d-flex justify-content-center align-items-center">
                                     <i class="fa-solid fa-user-injured"></i>
                                 </div>
-                                <div class="total-price d-flex justify-content-center align-items-center">
-                                    <p>$0.00</p>
-                                </div>
-                                <div class="basket-icon d-flex justify-content-center align-items-center">
-                                    <i class="fa-solid fa-bag-shopping"></i>
+                                <div class="basket-hover row gap-2">
+                                    <div class="total-price d-flex justify-content-center align-items-center">
+                                        <p>$0.00</p>
+                                    </div>
+                                    <div class="basket-icon d-flex justify-content-center align-items-center">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                    <div class="card-hover d-flex justify-content-center align-items-center flex-column p-0">
+                                        <div class="card-hover-details d-flex justify-content-center align-items-center flex-column">
+                                            <i class="fa-brands fa-shopify"></i>
+                                            <p>No products in the cart.</p>
+                                        </div>
+                                        <p>We reduce shipping prices to only 2.49 €!</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
