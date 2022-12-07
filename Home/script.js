@@ -1,4 +1,4 @@
-// let location = document.querySelector(".location");
-// location.onclick=function(){
-
-// };
+let location = document.querySelector(".location");
+location.onclick=function(){
+    
+};
