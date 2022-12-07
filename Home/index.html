@@ -36,7 +36,7 @@
                         <div class="col-lg-2 p-2 border-start row justify-content-evenly">
                             <div class="logo-hover col-lg-5 position-relative p-0">
                                 <span class="blue">English <i class="fa-solid fa-chevron-down"></i></span>
-                                <div class="drop d-flex justify-content-evenly align-items-center flex-column close">
+                                <div class="drop d-flex justify-content-evenly align-items-center flex-column open">
                                     <span class="blue">English</span>
                                     <span class="blue">Spanish</span>
                                     <span class="blue">German</span>
@@ -44,7 +44,7 @@
                             </div>
                             <div class="logo-hover col-lg-4 position-relative p-0">
                                 <span class="blue">USD <i class="fa-solid fa-chevron-down"></i></span>
-                                <div class="drop d-flex justify-content-evenly align-items-center flex-column close">
+                                <div class="drop d-flex justify-content-evenly align-items-center flex-column open">
                                     <span class="blue">USD</span>
                                     <span class="blue">INR</span>
                                     <span class="blue">GBP</span>
@@ -59,14 +59,15 @@
             <div class="row justify-content-center">
                 <div class="col-custom">
                     <div class="row flex-nowrap">
-                        <div class="test">
-                            <div class="location-box position-fixed">
+                        <div class="location-background close">
+                            <div class="location-box position-fixed p-4 d-flex flex-column justify-content-around">
                                 <i class="fa-solid fa-xmark position-absolute x-custom"></i>
                                 <h6>Choose your Delivery Location</h6>
                                 <p>Enter your address and we will specify the offer for your area.</p>
-                                <form action="">
+                                <div class="location-search d-flex justify-content-between align-items-center">
+                                    <i class="fa-solid fa-magnifying-glass ms-2 fs-4"></i>
                                     <input type="text" placeholder="Search your area">
-                                </form>
+                                </div>
                                 <div class="locations">
                                     <div class="row">
                                         <div class="lacation-name col-lg-8 blue p-0">
@@ -219,5 +220,6 @@
         </div>
     </header>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="./script.js"></script>
 </html>

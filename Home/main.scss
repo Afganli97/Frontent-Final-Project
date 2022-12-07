@@ -1,10 +1,10 @@
-body{
-    height: 5000px;
-}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    .close{
+        visibility: hidden !important;
+    }
     .col-custom{
         width: 1200px;
     }
@@ -33,17 +33,17 @@ body{
             box-shadow: 0px 5px 10px rgba(0,0,0,0.25);
             background-color: white;
         }
-        .close{
+        .open{
             visibility: hidden;
         }
         .logo-hover:hover{
-            .close{
+            .open{
                 visibility: visible;
             }
         }
     }
     .navbar-custom{
-        .test{
+        .location-background{
             position: fixed;
             z-index: 1;
             width: 100vw;
@@ -62,20 +62,26 @@ body{
             left: 50%;
             transform: translate(-50%,-50%);
             opacity: 1;
+            .location-search{
+                width: 100%;
+                height: 50px;
+                background-color: rgb(238, 238, 238);
+                border-radius: 8px;
+            }
             p{
                 font-size: 12px;
             }
             .x-custom{
                 font-size: 20px;
-                top: 5px;
-                right: 5px;
+                top: 20px;
+                right: 20px;
+                cursor: pointer;
             }
             input{
-                width: 90%;
-                height: 50px;
+                width: 85%;
+                height: 100%;
                 background-color: rgb(238, 238, 238);
                 border: none;
-                border-radius: 8px;
             }
             .delivery-price{
                 height: 20px;
@@ -92,7 +98,7 @@ body{
                 font-size: 10px;
             }
             .locations{
-                width: 80%;
+                width: 100%;
                 height: 60%;
                 overflow-y: scroll;
                 overflow-x: hidden;
