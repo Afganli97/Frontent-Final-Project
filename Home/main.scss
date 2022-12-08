@@ -191,6 +191,16 @@
                 height: 40px;
                 background-color: rgb(248, 185, 188);
                 border-radius: 50%;
+                position: relative;
+                .basket-count{
+                    width: 17px;
+                    height: 17px;
+                    background-color: red;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
             }
             .basket-hover:hover{
                 .card-hover{

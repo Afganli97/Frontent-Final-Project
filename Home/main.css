@@ -1,27 +1,35 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 * .close {
   visibility: hidden !important;
 }
+
 * .col-custom {
   width: 1200px;
 }
+
 * .blue:hover {
-  color: rgb(92, 149, 255);
+  color: #5c95ff;
   cursor: pointer;
 }
+
 * .gab {
   gap: 30px;
 }
+
 * .logo span {
   font-size: 13px;
 }
+
 * .logo .fa-chevron-down {
   font-size: 8px;
 }
+
 * .logo .drop {
   width: 120%;
   height: 100px;
@@ -30,15 +38,19 @@
   left: -20px;
   border-end-end-radius: 5px;
   border-end-start-radius: 5px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
   background-color: white;
 }
+
 * .logo .open {
   visibility: hidden;
 }
+
 * .logo .logo-hover:hover .open {
   visibility: visible;
 }
+
 * .navbar-custom .location-background {
   position: fixed;
   z-index: 1;
@@ -48,6 +60,7 @@
   top: 0;
   left: 0;
 }
+
 * .navbar-custom .location-box {
   width: 400px;
   height: 500px;
@@ -56,94 +69,124 @@
   border-radius: 10px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   opacity: 1;
 }
+
 * .navbar-custom .location-box .location-search {
   width: 100%;
   height: 50px;
-  background-color: rgb(238, 238, 238);
+  background-color: #eeeeee;
   border-radius: 8px;
 }
+
 * .navbar-custom .location-box p {
   font-size: 12px;
 }
+
 * .navbar-custom .location-box .x-custom {
   font-size: 20px;
   top: 20px;
   right: 20px;
   cursor: pointer;
 }
+
 * .navbar-custom .location-box input {
   width: 85%;
   height: 100%;
-  background-color: rgb(238, 238, 238);
+  background-color: #eeeeee;
   border: none;
 }
+
 * .navbar-custom .location-box .delivery-price {
   height: 20px;
   border: 1px solid gray;
   border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 * .navbar-custom .location-box .delivery-price span {
   font-size: 10px;
 }
+
 * .navbar-custom .location-box #clear-all span {
   font-size: 10px;
 }
+
 * .navbar-custom .location-box .locations {
   width: 100%;
   height: 60%;
   overflow-y: scroll;
   overflow-x: hidden;
 }
+
 * .navbar-custom .location-box .locations .row {
   height: 40px;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 * .navbar-custom .bacola-logo img {
   width: 100%;
   height: 80%;
 }
+
 * .navbar-custom .bacola-logo p {
   font-size: 12px;
 }
+
 * .navbar-custom .location {
   width: 90%;
   height: 100%;
   border: 1px solid gray;
   border-radius: 7px;
 }
+
 * .navbar-custom .h-80 {
   height: 60px;
 }
+
 * .navbar-custom .loc-text {
   width: 80%;
 }
+
 * .navbar-custom .loc-text .text-secondary {
   font-size: 10px;
   margin: 0;
 }
+
 * .navbar-custom .loc-text .text-blue {
   color: blue;
   font-size: 12px;
   margin: 0;
 }
+
 * .navbar-custom .loc-icon {
   width: 20%;
 }
+
 * .navbar-custom .search {
   width: 70%;
   height: 100%;
-  background-color: rgb(240, 240, 240);
+  background-color: #f0f0f0;
   border-radius: 8px;
   padding: 0 10px;
   position: relative;
 }
+
 * .navbar-custom .search .search-icon {
   width: 70px;
   position: absolute;
@@ -151,48 +194,70 @@
   top: 20px;
   right: 5px;
 }
+
 * .navbar-custom .search .search-icon i {
   font-size: 25px;
 }
+
 * .navbar-custom .search .search-icon .fa-xmark {
   visibility: hidden;
 }
+
 * .navbar-custom .search .search-form {
   width: 100%;
   height: 100%;
 }
+
 * .navbar-custom .search .search-input {
   width: 100%;
   height: 100%;
-  background-color: rgb(240, 240, 240);
+  background-color: #f0f0f0;
   border: none;
 }
+
 * .navbar-custom .basket-icons {
   width: 30%;
   height: 100%;
 }
+
 * .navbar-custom .basket-icons .account-icon {
   width: 40px;
   height: 40px;
   border: 1px solid gray;
   border-radius: 50%;
 }
+
 * .navbar-custom .basket-icons .total-price {
   width: 40px;
   height: 40px;
 }
+
 * .navbar-custom .basket-icons .basket-icon {
   width: 40px;
   height: 40px;
-  background-color: rgb(248, 185, 188);
+  background-color: #f8b9bc;
   border-radius: 50%;
+  position: relative;
 }
+
+* .navbar-custom .basket-icons .basket-icon .basket-count {
+  width: 17px;
+  height: 17px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 * .navbar-custom .basket-icons .basket-hover:hover .card-hover {
   visibility: visible;
 }
+
 * .navbar-custom .basket-icons .card-hover > p {
   font-size: 13px;
 }
+
 * .navbar-custom .basket-icons .card-hover {
   width: 400px;
   height: 250px;
@@ -204,11 +269,14 @@
   top: 50px;
   visibility: hidden;
 }
+
 * .navbar-custom .basket-icons .card-hover .card-hover-details {
   width: 80%;
   height: 80%;
 }
+
 * .navbar-custom .basket-icons .card-hover .card-hover-details i {
   font-size: 50px;
   color: red;
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */
