@@ -316,8 +316,34 @@
   height: 73%;
 }
 
+* .navbar-custom .categories .categories-drop .inner-categories p {
+  font-size: 13px;
+}
+
+* .navbar-custom .categories .categories-drop .inner-categories span {
+  font-size: 13px;
+}
+
 * .navbar-custom .categories .categories-drop .categories-more {
   height: 27%;
+}
+
+* .navbar-custom .categories .categories-drop .categories-more p {
+  font-size: 15px;
+}
+
+* .navbar-custom .categories .categories-drop .cat-drop {
+  width: 260px;
+  height: 500px;
+  position: absolute;
+  left: 259px;
+  top: -1px;
+  background-color: white;
+  visibility: hidden;
+}
+
+* .navbar-custom .categories .categories-drop .cat-hover:hover .cat-drop {
+  visibility: visible;
 }
 
 * .navbar-custom .nav-grid-custom {

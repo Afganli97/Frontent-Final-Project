@@ -258,9 +258,32 @@
                 background-color: white;
                 .inner-categories{
                     height: 73%;
+                    p{
+                        font-size: 13px;
+                    }
+                    span{
+                        font-size: 13px;
+                    }
                 }
                 .categories-more{
                     height: 27%;
+                    p{
+                        font-size: 15px;
+                    }
+                }
+                .cat-drop{
+                    width: 260px;
+                    height: 500px;
+                    position: absolute;
+                    left: 259px;
+                    top: -1px;
+                    background-color: white;
+                    visibility: hidden;
+                }
+                .cat-hover:hover{
+                    .cat-drop{
+                        visibility: visible;
+                    }
                 }
             }
         }
