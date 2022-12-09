@@ -13,3 +13,16 @@ locationClose.onclick = function(){
 cat.onclick = function(){
         catDrop.classList.toggle("close");
 }
+$(document).ready(function(){
+    $('.slick-container').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        cssEase: 'linear',
+        appendArrows: []
+
+
+
+        
+    });
+  });
