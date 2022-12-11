@@ -597,6 +597,7 @@
         border-radius: 8px;
         z-index: 2;
         height: 112%;
+        box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2);
         .buttons{
             visibility: visible;
         }
@@ -754,6 +755,21 @@
     #extra{
         .extra{
             background-color: #fbeacf;
+            cursor: pointer;
+        }
+    }
+    #products{
+        .col-custom-grid{
+            width: 100%;
+            display: grid;
+            grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
+            .product-card{
+                width: 100%;
+                background-color: white;
+                img{
+                    width: 100%;
+                }
+            }
         }
     }
 }
