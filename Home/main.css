@@ -607,4 +607,105 @@
 * #discounts .banner .discount-description .shop-now p {
   color: white;
   font-size: 13px;
+}
+* #best-sellers .best-text p {
+  font-size: 18px;
+  font-weight: 600;
+}
+* #best-sellers .best-text span {
+  font-size: 12px;
+  color: #71778e;
+}
+* #best-sellers .view-all {
+  width: auto;
+  height: 30px;
+  cursor: pointer;
+}
+* #best-sellers .view-all div {
+  width: 100%;
+  height: 100%;
+}
+* #best-sellers .cards-carusel {
+  width: 100%;
+}
+* #best-sellers .cards-carusel .best-sellers-card .in-stock {
+  color: #3cc87c;
+  font-size: 11px;
+  font-weight: 700;
+}
+* #best-sellers .cards-carusel .best-sellers-card .stars {
+  font-size: 12px;
+}
+* #best-sellers .cards-carusel .best-sellers-card .stars .yellow {
+  color: #ffcd00;
+}
+* #best-sellers .cards-carusel .best-sellers-card .stars .gray {
+  color: #d9d9e9;
+}
+* #best-sellers .cards-carusel .best-sellers-card .recomended {
+  position: absolute;
+  top: 42px;
+  z-index: 1;
+  background-color: #71778e;
+  color: white;
+  width: 100px;
+  height: 25px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+* #best-sellers .cards-carusel .best-sellers-card .organic {
+  position: absolute;
+  top: 42px;
+  z-index: 1;
+  background-color: #e5f8ed;
+  color: #108e53;
+  width: 75px;
+  height: 25px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+* #best-sellers .cards-carusel .best-sellers-card .card-description {
+  font-size: 15px;
+  font-weight: 500;
+}
+* #best-sellers .cards-carusel .best-sellers-card .buttons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  visibility: hidden;
+  cursor: pointer;
+}
+* #best-sellers .cards-carusel .best-sellers-card .buttons .circle {
+  width: 40px;
+  height: 40px;
+}
+* #best-sellers .cards-carusel .best-sellers-card .buttons .circle i {
+  font-size: 18px;
+}
+* #best-sellers .cards-carusel .best-sellers-card .add-tocards {
+  width: 80%;
+  height: 35px;
+  left: auto;
+  background-color: #ffcd00;
+  font-size: 13px;
+  cursor: pointer;
+}
+* #best-sellers .cards-carusel .best-sellers-card img {
+  width: 100%;
+  cursor: pointer;
+}
+* #best-sellers .cards-carusel .best-sellers-card:hover .buttons {
+  visibility: visible;
+}
+* #best-sellers .cards-carusel .best-sellers-card:hover .circle:hover {
+  background-color: #233a95;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
