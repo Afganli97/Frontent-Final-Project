@@ -577,4 +577,34 @@
 * .product-card:hover .circle:hover {
   background-color: #233a95;
   color: white;
+}
+* #discounts .banner {
+  cursor: pointer;
+}
+* #discounts .banner img {
+  width: 100%;
+  height: 100%;
+}
+* #discounts .banner .discount-description {
+  position: absolute;
+  top: 0;
+}
+* #discounts .banner .discount-description p {
+  color: #ff8275;
+}
+* #discounts .banner .discount-description h3 {
+  color: #494d62;
+}
+* #discounts .banner .discount-description span {
+  color: #494d62;
+}
+* #discounts .banner .discount-description .shop-now {
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #233a95;
+}
+* #discounts .banner .discount-description .shop-now p {
+  color: white;
+  font-size: 13px;
 }/*# sourceMappingURL=main.css.map */
