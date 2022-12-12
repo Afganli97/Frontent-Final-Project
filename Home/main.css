@@ -367,109 +367,6 @@
   background-image: linear-gradient(90deg, #85cfbd, #9dcfcf);
   color: green;
 }
-* #categories-items .col-custom-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-* #categories-items .col-custom-grid .category-items-pair {
-  height: 100%;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-}
-* #categories-items .col-custom-grid .category-items-pair .category-items {
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-* #categories-items .col-custom-grid .category-items-pair .category-items img {
-  width: 30%;
-}
-* #categories-items .col-custom-grid .category-item {
-  padding: 10px;
-}
-* #categories-items .col-custom-grid .category-item .img {
-  width: 80%;
-}
-* #categories-items .col-custom-grid .category-item .img img {
-  width: 100%;
-  height: 100%;
-}
-* #categories-items .col-custom-grid .categoty-items-text {
-  padding: 15px;
-}
-* #categories-items .col-custom-grid .categoty-items-text span {
-  font-size: 12px;
-}
-* #deals-of-week .deals-week {
-  width: 35%;
-}
-* #deals-of-week .deals-week .time-box {
-  width: 50px;
-  height: 50px;
-  font-size: 20px;
-}
-* #deals-of-week .deals-week .img {
-  width: 100%;
-}
-* #deals-of-week .deals-week .img img {
-  width: 100%;
-}
-* #deals-of-week .deals-week .img .discount {
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  font-size: 25px;
-}
-* #deals-of-week .deals-week .timer p {
-  font-size: 20px;
-  color: #3a5dac;
-}
-* #deals-of-week .deals-week .timer p span {
-  color: #233a95;
-}
-* #deals-of-week .deals-week .timer .remains {
-  font-size: 13px;
-}
-* #deals-of-week .deals-week .price .kg {
-  font-size: 12px;
-}
-* #deals-of-week .deals-week .price .aval {
-  color: #d6dae9;
-  font-size: 11px;
-}
-* #deals-of-week .deals-week .price .aval-num {
-  color: #2b459c;
-  font-size: 17px;
-}
-* #deals-of-week .deals-week .price .price-colors {
-  width: 100%;
-  height: 10px;
-  background-color: #edeef5;
-  border-radius: 10px;
-}
-* #deals-of-week .deals-week .price .price-colors .color-start {
-  width: 80%;
-  height: 100%;
-  background: linear-gradient(90deg, #d71543, #ffc903) !important;
-  border-radius: 10px;
-}
-* #deals-of-week .week-cards {
-  width: 65%;
-  display: grid;
-  grid-template: 1fr 1fr/1fr 1fr 1fr;
-}
-* #deals-of-week .week-cards .product-card {
-  width: 100%;
-  background-color: white;
-}
-* #deals-of-week .week-cards .product-card img {
-  width: 100%;
-}
 * .discount-card {
   position: absolute;
   top: 15px;
@@ -578,6 +475,113 @@
 * .product-card:hover .circle:hover {
   background-color: #233a95;
   color: white;
+}
+* .grid-col-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+* #categories-items .col-custom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+* #categories-items .col-custom-grid .category-items-pair {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+* #categories-items .col-custom-grid .category-items-pair .category-items {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* #categories-items .col-custom-grid .category-items-pair .category-items img {
+  width: 30%;
+}
+* #categories-items .col-custom-grid .category-item {
+  padding: 10px;
+}
+* #categories-items .col-custom-grid .category-item .img {
+  width: 80%;
+}
+* #categories-items .col-custom-grid .category-item .img img {
+  width: 100%;
+  height: 100%;
+}
+* #categories-items .col-custom-grid .categoty-items-text {
+  padding: 15px;
+}
+* #categories-items .col-custom-grid .categoty-items-text span {
+  font-size: 12px;
+}
+* #deals-of-week .deals-week {
+  width: 35%;
+}
+* #deals-of-week .deals-week .time-box {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+}
+* #deals-of-week .deals-week .img {
+  width: 100%;
+}
+* #deals-of-week .deals-week .img img {
+  width: 100%;
+}
+* #deals-of-week .deals-week .img .discount {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 25px;
+}
+* #deals-of-week .deals-week .timer p {
+  font-size: 20px;
+  color: #3a5dac;
+}
+* #deals-of-week .deals-week .timer p span {
+  color: #233a95;
+}
+* #deals-of-week .deals-week .timer .remains {
+  font-size: 13px;
+}
+* #deals-of-week .deals-week .price .kg {
+  font-size: 12px;
+}
+* #deals-of-week .deals-week .price .aval {
+  color: #d6dae9;
+  font-size: 11px;
+}
+* #deals-of-week .deals-week .price .aval-num {
+  color: #2b459c;
+  font-size: 17px;
+}
+* #deals-of-week .deals-week .price .price-colors {
+  width: 100%;
+  height: 10px;
+  background-color: #edeef5;
+  border-radius: 10px;
+}
+* #deals-of-week .deals-week .price .price-colors .color-start {
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(90deg, #d71543, #ffc903) !important;
+  border-radius: 10px;
+}
+* #deals-of-week .week-cards {
+  width: 65%;
+  display: grid;
+  grid-template: 1fr 1fr/1fr 1fr 1fr;
+}
+* #deals-of-week .week-cards .product-card {
+  width: 100%;
+  background-color: white;
+}
+* #deals-of-week .week-cards .product-card img {
+  width: 100%;
 }
 * #discounts .banner {
   cursor: pointer;
@@ -725,4 +729,39 @@
 }
 * #products .col-custom-grid .product-card img {
   width: 100%;
+}
+* #discount-banners .discount-banner {
+  cursor: pointer;
+}
+* #discount-banners .discount-banner p {
+  font-size: 13px;
+  color: #1dbf67;
+}
+* #discount-banners .discount-banner span {
+  font-size: 11px;
+  color: #c2c2d3;
+}
+* #discount-banners .discount-banner .shop-now {
+  width: 100px;
+  height: 30px;
+  background-color: #c2c2d3;
+}
+* #discount-banners .discount-banner .shop-now p {
+  color: white;
+  font-size: 12px;
+}
+* #discount-banners .background-1 {
+  width: 100%;
+  background-image: url("../images/bacola-banner-05.jpg");
+  background-size: 100%;
+}
+* #discount-banners .background-2 {
+  width: 100%;
+  background-image: url("../images/bacola-banner-06.jpg");
+  background-size: 100%;
+}
+* #discount-banners .background-3 {
+  width: 100%;
+  background-image: url("../images/bacola-banner-10.jpg");
+  background-size: 100%;
 }/*# sourceMappingURL=main.css.map */

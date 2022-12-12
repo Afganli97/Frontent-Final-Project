@@ -385,6 +385,121 @@
             }
         }
     }
+    .discount-card{
+        position: absolute;
+        top: 15px;
+        z-index: 1;
+        background-color: #2bbef9;
+        color: white;
+        width: 50px;
+        height: 25px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .product-card{
+        .in-stock{
+            color: #3cc87c;
+            font-size: 11px;
+            font-weight: 700;
+        }
+        .stars{
+            font-size: 12px;
+            .yellow{
+                color: #ffcd00;
+            }
+            .gray{
+                color: #d9d9e9;
+            }
+        }
+        .recomended{
+            position: absolute;
+            top: 42px;
+            z-index: 1;
+            background-color: #71778e;
+            color: white;
+            width: 100px;
+            height: 25px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .organic{
+            position: absolute;
+            top: 42px;
+            z-index: 1;
+            background-color: #e5f8ed;
+            color: #108e53;
+            width: 75px;
+            height: 25px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .card-description{
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .buttons{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            visibility: hidden;
+            cursor: pointer;
+            .circle{
+                width: 40px;
+                height: 40px;
+                i{
+                    font-size: 18px;
+                }
+            }
+        }
+        .add-tocards{
+            width: 80%;
+            height: 35px;
+            position: absolute;
+            bottom: 10px;
+            left: auto;
+            background-color: #233a95;
+            color: white;
+            font-size: 13px;
+            visibility: hidden;
+            cursor: pointer;
+        }
+        img{
+            cursor: pointer;
+        }
+    }
+    .product-card:hover{
+        border: 1px solid gray !important;
+        border-radius: 8px;
+        z-index: 2;
+        height: 112%;
+        box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2);
+        .buttons{
+            visibility: visible;
+        }
+        .add-tocards{
+            visibility: visible;
+        }
+        .circle:hover{
+            background-color: #233a95;
+            color: white;
+        }
+    }
+    .grid-col-3{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
     #categories-items{
         .col-custom-grid{
             display: grid;
@@ -496,117 +611,6 @@
                     width: 100%;
                 }
             }
-        }
-    }
-    .discount-card{
-        position: absolute;
-        top: 15px;
-        z-index: 1;
-        background-color: #2bbef9;
-        color: white;
-        width: 50px;
-        height: 25px;
-        border-radius: 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 12px;
-        font-weight: 600;
-    }
-    .product-card{
-        .in-stock{
-            color: #3cc87c;
-            font-size: 11px;
-            font-weight: 700;
-        }
-        .stars{
-            font-size: 12px;
-            .yellow{
-                color: #ffcd00;
-            }
-            .gray{
-                color: #d9d9e9;
-            }
-        }
-        .recomended{
-            position: absolute;
-            top: 42px;
-            z-index: 1;
-            background-color: #71778e;
-            color: white;
-            width: 100px;
-            height: 25px;
-            border-radius: 5px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 12px;
-            font-weight: 600;
-        }
-        .organic{
-            position: absolute;
-            top: 42px;
-            z-index: 1;
-            background-color: #e5f8ed;
-            color: #108e53;
-            width: 75px;
-            height: 25px;
-            border-radius: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 14px;
-            font-weight: 500;
-        }
-        .card-description{
-            font-size: 14px;
-            font-weight: 500;
-        }
-        .buttons{
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            visibility: hidden;
-            cursor: pointer;
-            .circle{
-                width: 40px;
-                height: 40px;
-                i{
-                    font-size: 18px;
-                }
-            }
-        }
-        .add-tocards{
-            width: 80%;
-            height: 35px;
-            position: absolute;
-            bottom: 10px;
-            left: auto;
-            background-color: #233a95;
-            color: white;
-            font-size: 13px;
-            visibility: hidden;
-            cursor: pointer;
-        }
-        img{
-            cursor: pointer;
-        }
-    }
-    .product-card:hover{
-        border: 1px solid gray !important;
-        border-radius: 8px;
-        z-index: 2;
-        height: 112%;
-        box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2);
-        .buttons{
-            visibility: visible;
-        }
-        .add-tocards{
-            visibility: visible;
-        }
-        .circle:hover{
-            background-color: #233a95;
-            color: white;
         }
     }
     #discounts{
@@ -770,6 +774,43 @@
                     width: 100%;
                 }
             }
+        }
+    }
+    #discount-banners{
+        .discount-banner{
+            cursor: pointer;
+            p{
+                font-size: 13px;
+                color: #1dbf67;
+            }
+            span{
+                font-size: 11px;
+                color: #c2c2d3;
+            }
+            .shop-now{
+                width: 100px;
+                height: 30px;
+                background-color: #c2c2d3;
+                p{
+                    color: white;
+                    font-size: 12px;
+                }
+            }
+        }
+        .background-1{
+            width: 100%;
+            background-image: url("../images/bacola-banner-05.jpg");
+            background-size: 100%;
+        }
+        .background-2{
+            width: 100%;
+            background-image: url("../images/bacola-banner-06.jpg");
+            background-size: 100%;
+        }
+        .background-3{
+            width: 100%;
+            background-image: url("../images/bacola-banner-10.jpg");
+            background-size: 100%;
         }
     }
 }
