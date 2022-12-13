@@ -319,6 +319,13 @@
 * .navbar-custom .nav-grid-custom .nav-hover:hover .nav-drop {
   visibility: visible;
 }
+* #touch .contacts-box {
+  background-color: #f3f3f6;
+}
+* #touch .contacts-box i {
+  font-size: 35px;
+  color: #233a95;
+}
 * #coupon .coupon-background {
   background-color: #233a95;
 }
