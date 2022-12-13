@@ -1053,4 +1053,81 @@
 * #coupon .coupon-benefits p {
   font-size: 13px;
 }
+
+* footer .grid-custom-5 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+* footer .footer-categories p {
+  font-size: 15px;
+}
+
+* footer .footer-categories span {
+  font-size: 14px;
+  color: #71778e;
+  font-weight: 400;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+* footer .phone .phone-logo {
+  width: 40px;
+  height: 40px;
+}
+
+* footer .phone span {
+  font-size: 12px;
+}
+
+* footer .aplications p {
+  font-size: 15px;
+}
+
+* footer .aplications span {
+  font-size: 13px;
+  color: #71778e;
+}
+
+* footer .aplications .app-box {
+  width: 220px;
+  cursor: pointer;
+}
+
+* footer .aplications .app-box .app-text p {
+  font-size: 7px;
+}
+
+* footer .aplications .app-box .app-text span {
+  font-size: 12px;
+}
+
+* footer .aplications .app-social {
+  width: 200px;
+  height: 30px;
+  cursor: pointer;
+}
+
+* footer .aplications .app-social i {
+  color: #233a95;
+}
+
+* footer .privacy span {
+  font-size: 12px;
+  color: #71778e;
+}
+
+* footer .privacy i {
+  font-size: 25px;
+}
+
+* footer .privacy .privacy-hover *:hover {
+  cursor: pointer;
+}
+
+* footer .privacy .privacy-hover span:hover {
+  text-decoration: underline;
+}
 /*# sourceMappingURL=main.css.map */

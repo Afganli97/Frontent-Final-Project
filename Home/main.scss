@@ -871,4 +871,75 @@
             }
         }
     }
+    footer{
+        .grid-custom-5{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+        .footer-categories{
+            p{
+                font-size: 15px;
+            }
+            span{
+                font-size: 14px;
+                color: #71778e;
+                font-weight: 400;
+                line-height: 25px;
+                cursor: pointer;
+            }
+        }
+        .phone{
+            .phone-logo{
+                width: 40px;
+                height: 40px;
+            }
+            span{
+                font-size: 12px;
+            }
+        }
+        .aplications{
+            p{
+                font-size: 15px;
+            }
+            span{
+                font-size: 13px;
+                color: #71778e;
+            }
+            .app-box{
+                width: 220px;
+                cursor: pointer;
+                .app-text{
+                    p{
+                        font-size: 7px;
+                    }
+                    span{
+                        font-size: 12px;
+                    }
+                }
+            }
+            .app-social{
+                width: 200px;
+                height: 30px;
+                cursor: pointer;
+                i{
+                    color: #233a95;
+                }
+            }
+        }
+        .privacy{
+            span{
+                font-size: 12px ;
+                color: #71778e;
+            }
+            i{
+                font-size: 25px;
+            }
+            .privacy-hover *:hover{
+                cursor: pointer;
+            }
+            .privacy-hover span:hover{
+                text-decoration: underline;
+            }
+        }
+    }
 }
