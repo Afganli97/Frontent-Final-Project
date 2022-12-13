@@ -319,6 +319,10 @@
 * .navbar-custom .nav-grid-custom .nav-hover:hover .nav-drop {
   visibility: visible;
 }
+* #blogs img {
+  width: auto;
+  height: auto;
+}
 * #coupon .coupon-background {
   background-color: #233a95;
 }
