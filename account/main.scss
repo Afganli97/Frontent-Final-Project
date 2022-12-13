@@ -335,6 +335,68 @@
             }
         }
     }
+    #login{
+        .login-box{
+            width: 500px;
+            height: 500px;
+            .login-box-text{
+                .login-register{
+                    color: #a8a8a8;
+                }
+            }
+            span{
+                cursor: pointer;
+            }
+            .animation-box{
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                .login-animate{
+                    width: 200%;
+                    height: 100%;
+                    position: absolute;
+                    left: 0;
+                    .login-form{
+                        width: 100%;
+                        form{
+                            width: 100%;
+                            .input-gray{
+                                width: 100%;
+                                height: 45px;
+                                background-color: #f3f4f7;
+                            }
+                            button{
+                                width: 100%;
+                                height: 45px;
+                                background-color: #233a95;
+                                color: white;
+                            }
+                        }
+                    }
+                    .login-input{
+                        p{
+                            color: #48bff9;
+                            cursor: pointer;
+                        }
+                        p:hover{
+                            color: #233a95;
+                            text-decoration: underline;
+                        }
+                    }
+                    .register-input{
+                        p{
+                            font-size: 12px;
+                            span{
+                                color: red;
+                                text-decoration: underline;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     #coupon{
         .coupon-background{
             background-color: #233a95;
