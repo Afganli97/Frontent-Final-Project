@@ -813,4 +813,39 @@
             background-size: 100%;
         }
     }
+    #posts{
+        .post{
+            width: 100%;
+            .post-img{
+                width: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .post-context{
+                .post-category{
+                    font-size: 12px;
+                }
+                .post-text{
+                    font-size: 21px;
+                }
+                .post-blog{
+                    cursor: pointer;
+                    .post-date{
+                        font-size: 14px;
+                    }
+                    .post-comment{
+                        font-size: 14px;
+                    }
+                    .post-by{
+                        font-size: 14px;
+                    }
+                    .post-bacola{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
 }
