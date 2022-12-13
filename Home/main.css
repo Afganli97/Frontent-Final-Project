@@ -1049,4 +1049,8 @@
   height: 50px;
   background-color: #233a95;
 }
+
+* #coupon .coupon-benefits p {
+  font-size: 13px;
+}
 /*# sourceMappingURL=main.css.map */
