@@ -1031,4 +1031,22 @@
 * #posts .post .post-context .post-blog .post-bacola {
   font-size: 14px;
 }
+
+* #coupon .coupon-background {
+  background-color: #233a95;
+}
+
+* #coupon .coupon-background .coupon-subscribe i {
+  font-size: 18px;
+}
+
+* #coupon .coupon-background .coupon-subscribe form {
+  width: 90%;
+}
+
+* #coupon .coupon-background .coupon-subscribe form button {
+  width: 100px;
+  height: 50px;
+  background-color: #233a95;
+}
 /*# sourceMappingURL=main.css.map */
