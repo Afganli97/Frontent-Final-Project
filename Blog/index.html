@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./main.css">
+    <title>Blog</title>
+</head>
+<body>
+        <header>
+                <!-- logo start -->
+                <div class="logo border-bottom">
+                    <div class="row justify-content-center">
+                        <div class="col-custom">
+                            <div class="row">
+                                <div class="col-lg-4 p-2">
+                                    <span class="me-2 blue">About us</span>
+                                    <span class="me-2 blue">My account</span>
+                                    <span class="me-2 blue">Wishlist</span>
+                                    <span class="me-2 blue">Order Tracking</span>
+                                </div>
+                                <div class="col-lg-6 p-2">
+                                    <div class="row">
+                                        <div class="col-lg-7">
+                                            <i class="fa-regular fa-hand-point-up"></i>
+                                            <span>100% Secure delivery without contacting the courier</span>
+                                        </div>
+                                        <div class="col-lg-5 border-start">
+                                            <span>Need help? Call Us: </span>
+                                            <span class="fw-bolder text-primary">+ 0020 500</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 p-2 border-start row justify-content-evenly">
+                                    <div class="logo-hover col-lg-5 position-relative p-0">
+                                        <span class="blue">English <i class="fa-solid fa-chevron-down"></i></span>
+                                        <div class="drop d-flex justify-content-evenly align-items-center flex-column open">
+                                            <span class="blue">English</span>
+                                            <span class="blue">Spanish</span>
+                                            <span class="blue">German</span>
+                                        </div>
+                                    </div>
+                                    <div class="logo-hover col-lg-4 position-relative p-0">
+                                        <span class="blue">USD <i class="fa-solid fa-chevron-down"></i></span>
+                                        <div class="drop d-flex justify-content-evenly align-items-center flex-column open">
+                                            <span class="blue">USD</span>
+                                            <span class="blue">INR</span>
+                                            <span class="blue">GBP</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- logo end -->
+                <div class="navbar-custom pt-4">
+                    <div class="row justify-content-center">
+                        <div class="col-custom">
+                            <div class="row flex-nowrap">
+                                <div class="location-background close">
+                                    <div class="location-box position-fixed p-4 d-flex flex-column justify-content-around">
+                                        <i class="fa-solid fa-xmark position-absolute x-custom"></i>
+                                        <h6>Choose your Delivery Location</h6>
+                                        <p>Enter your address and we will specify the offer for your area.</p>
+                                        <div class="location-search d-flex justify-content-between align-items-center">
+                                            <i class="fa-solid fa-magnifying-glass ms-2 fs-4"></i>
+                                            <input type="text" placeholder="Search your area">
+                                        </div>
+                                        <div class="locations">
+                                            <div class="row">
+                                                <div class="lacation-name col-lg-8 blue p-0">
+                                                    <span>Select a Location</span>
+                                                </div>
+                                                <div class="delivery-price col-lg-2 p-0">
+                                                    <span>Clear All</span>
+                                                </div>
+                                            </div>
+                                           <div class="row">
+                                                <div class="lacation-name col-lg-8 blue p-0">
+                                                    <span>Alabama</span>
+                                                </div>
+                                                <div class="delivery-price col-lg-2 p-0">
+                                                    <span>Min:$130</span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="lacation-name col-lg-8 blue p-0">
+                                                        <span>Alaska</span>
+                                                </div>
+                                                <div class="delivery-price col-lg-2 p-0">
+                                                    <span>Min:$120</span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="lacation-name col-lg-8 blue p-0">
+                                                    <span>Arizona</span>
+                                                </div>
+                                                <div class="delivery-price col-lg-2 p-0">
+                                                    <span>Min:$150</span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="lacation-name col-lg-8 blue p-0">
+                                                    <span>California</span>
+                                                </div>
+                                                <div class="delivery-price col-lg-2 p-0">
+                                                    <span>Min:$110</span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="lacation-name col-lg-8 blue p-0">
+                                                    <span>Colorado</span>
+                                                </div>
+                                                <div class="delivery-price col-lg-2 p-0">
+                                                    <span>Min:$140</span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="lacation-name col-lg-8 blue p-0">
+                                                    <span>Florida</span>
+                                                </div>
+                                                <div class="delivery-price col-lg-2 p-0">
+                                                    <span>Min:$160</span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="lacation-name col-lg-8 blue p-0">
+                                                    <span>Georgia</span>
+                                                </div>
+                                                <div class="delivery-price col-lg-2 p-0">
+                                                    <span>Min:$120</span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="lacation-name col-lg-8 blue p-0">
+                                                    <span>Cansas</span>
+                                                </div>
+                                                <div class="delivery-price col-lg-2 p-0">
+                                                    <span>Min:$170</span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="lacation-name col-lg-8 blue p-0">
+                                                    <span>Minnesota</span>
+                                                </div>
+                                                <div class="delivery-price col-lg-2 p-0">
+                                                    <span>Min:$120</span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="lacation-name col-lg-8 blue p-0">
+                                                    <span>New York</span>
+                                                </div>
+                                                <div class="delivery-price col-lg-2 p-0">
+                                                    <span>Min:$110</span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="lacation-name col-lg-8 blue p-0">
+                                                    <span>Washington</span>
+                                                </div>
+                                                <div class="delivery-price col-lg-2 p-0">
+                                                    <span>Min:$130</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bacola-logo col-lg-2 h-80 p-0">
+                                    <img src="../images/bacola-logo.png" alt="">
+                                    <p class="text-secondary">Online Grocery Shopping Center</p>
+                                </div>
+                                <div class="col-lg-2 h-80 ms-2">
+                                    <div class="location row">
+                                        <div class="loc-text d-flex justify-content-center align-items-start flex-column">
+                                            <p class="text-secondary">Your location</p>
+                                            <p class="text-blue fw-bolder">Select a Location</p>
+                                        </div>
+                                        <div class="loc-icon d-flex justify-content-center align-items-start flex-column">
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 h-80 p-0 d-flex">
+                                    <div class="search">
+                                        <form class="search-form" action="">
+                                            <input class="search-input" type="text" placeholder="Search a products...">
+                                        </form>
+                                        <div class="search-icon">
+                                            <i class="fa-solid fa-xmark"></i>
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </div>
+                                    </div>
+                                    <div class="basket-icons d-flex justify-content-center align-items-center gap-3 position-relative">
+                                        <div class="account-icon d-flex justify-content-center align-items-center">
+                                            <i class="fa-solid fa-user-injured"></i>
+                                        </div>
+                                        <div class="basket-hover row gap-2">
+                                            <div class="total-price d-flex justify-content-center align-items-center">
+                                                <p>$0.00</p>
+                                            </div>
+                                            <div class="basket-icon d-flex justify-content-center align-items-center">
+                                                <i class="fa-solid fa-bag-shopping"></i>
+                                                <div class="basket-count d-flex justify-content-center align-items-center">0</div>
+                                            </div>
+                                            <div class="card-hover d-flex justify-content-center align-items-center flex-column p-0">
+                                                <div class="card-hover-details d-flex justify-content-center align-items-center flex-column">
+                                                    <i class="fa-brands fa-shopify"></i>
+                                                    <p>No products in the cart.</p>
+                                                </div>
+                                                <p>We reduce shipping prices to only 2.49 €!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center pt-4 position-relative">
+                        <div class="col-custom d-flex align-items-center justify-content-between">
+                            <div class="categories col-lg-2 bg-primary p-3 d-flex justify-content-between align-items-center position-relative">
+                                <i class="fa-solid fa-bars text-white"></i>
+                                <div class="categories-text">
+                                    <span class="all-categories fw-semibold">ALL CATEGORIES</span>
+                                </div>
+                                <i class="fa-solid fa-chevron-down text-white"></i>
+                                <div class="categories-count position-absolute d-flex justify-content-center align-items-center">
+                                    <p class="fw-bolder">TOTAL 63 PRODUCTS</p>
+                                </div>
+                                <div class="categories-drop border close">
+                                    <div class="inner-categories border-bottom d-flex flex-column justify-content-between">
+                                        <div class="d-flex justify-content-between align-items-center cat-hover p-4 pb-0">
+                                           <div class="blue">
+                                            <i class="fa-brands fa-apple"></i>
+                                            <span>Fruits&Vegetables</span>
+                                           </div>
+                                            <i class="fa-solid fa-chevron-right" style="font-size: 13px;"></i>
+                                            <div class="cat-drop border p-3">
+                                                <p class="blue">Cuts & Sprouts</p>
+                                                <p class="blue">Exotic Fruits & Veggies</p>
+                                                <p class="blue">Fresh Fruits</p>
+                                                <p class="blue">Fresh Vegetables</p>
+                                                <p class="blue">Herbs & Seasonings</p>
+                                                <p class="blue">Packaged Produce</p>
+                                                <p class="blue">Party Trays</p>
+                                            </div>
+                                        </div>
+                                        <div class="blue ps-4 pe-4">
+                                            <i class="fa-solid fa-fish"></i>
+                                            <span>Meats&Seafoods</span>
+                                        </div>
+                                        <div class="blue ps-4 pe-4">
+                                            <i class="fa-solid fa-egg"></i>
+                                            <span>Breakfast&Dairy</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center cat-hover ps-4 pe-4">
+                                            <div class="blue ">
+                                                <i class="fa-solid fa-mug-hot"></i>
+                                                <span>Beverages</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-right" style="font-size: 13px;"></i>
+                                            <div class="cat-drop border p-3">
+                                                <p class="blue">Coffee</p>
+                                                <p class="blue">Craft Beer</p>
+                                                <p class="blue">Drink Boxes & Pouches</p>
+                                                <p class="blue">Milk & Plant-Based Milk</p>
+                                                <p class="blue">Soda & Pop</p>
+                                                <p class="blue">Sparkling Water</p>
+                                                <p class="blue">Tea & Kombucha</p>
+                                                <p class="blue">Water</p>
+                                                <p class="blue">Wine</p>
+                                            </div>
+                                        </div>
+                                        <div class="blue ps-4 pe-4">
+                                            <i class="fa-solid fa-cookie-bite"></i>
+                                            <span>Breads&Bakery</span>
+                                        </div>
+                                        <div class="blue ps-4 pe-4">
+                                            <i class="fa-regular fa-snowflake"></i>
+                                            <span>Frozen Foods</span>
+                                        </div>
+                                        <div class="blue ps-4 pe-4">
+                                            <i class="fa-solid fa-cake-candles"></i>
+                                            <span>Biscuids&Snacks</span>
+                                        </div>
+                                        <div class="blue p-4 pt-0">
+                                            <i class="fa-solid fa-seedling"></i>
+                                            <span>Grocery&Staples</span>
+                                        </div>
+                                    </div>
+                                    <div class="categories-more p-3 d-flex flex-column justify-content-between">
+                                        <div class="blue ps-4 pe-4">
+                                            <p>Value of the Day</p>
+                                        </div>
+                                        <div class="blue ps-4 pe-4">
+                                            <p>Top 100 Offers</p>
+                                        </div>
+                                        <div class="blue p-4 pt-0">
+                                            <p>New Arrivals</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 nav-grid-custom gap-4 d-flex justify-content-between align-items-center">
+                                <div class="home nav-hover nav-menu position-relative">
+                                    <span class="fw-semibold blue">HOME</span>
+                                    <i class="fa-solid fa-chevron-down blue"></i>
+                                    <div class="nav-drop home-drop p-4">
+                                        <p class="blue">Home 1</p>
+                                        <p class="blue">Home 2</p>
+                                        <p class="blue">Home 3</p>
+                                        <p class="blue">Home 4</p>
+                                        <p class="blue">Home 5</p>
+                                    </div>
+                                </div>
+                                <div class="shop nav-menu nav-hover">
+                                    <span class="fw-semibold blue">SHOP</span>
+                                    <i class="fa-solid fa-chevron-down blue"></i>
+                                    <div class="nav-drop shop-drop d-flex justify-content-around ps-5">
+                                        <div class="shop-drop-inner">
+                                            <p class="text-header fw-semibold blue">Shop Lists</p>
+                                            <p class="text blue">Shop Default</p>
+                                            <p class="text blue">Shop Right Sidebar</p>
+                                            <p class="text blue">Shop Wide</p>
+                                            <p class="text blue">List Left Sidebar</p>
+                                            <p class="text blue">Load More Button</p>
+                                            <p class="text blue">Infinite Scrolling</p>
+                                        </div>
+                                        <div class="shop-drop-inner">
+                                            <p class="text-header fw-semibold blue">Product Details</p>
+                                            <p class="text blue">Product Default</p>
+                                            <p class="text blue">Product Variable</p>
+                                            <p class="text blue">Product Grouped</p>
+                                            <p class="text blue">Product External</p>
+                                            <p class="text blue">Product Downloadable</p>
+                                            <p class="text blue">Product With Video</p>
+                                        </div>
+                                        <div class="shop-drop-inner">
+                                            <p class="text-header fw-semibold blue">Product Types</p>
+                                            <p class="text blue"> Single Type 1</p>
+                                            <p class="text blue">Single Type 2</p>
+                                            <p class="text blue">Single Type 3</p>
+                                            <p class="text blue"> Single Type 4</p>
+                                            <p class="text blue">Thumbnails Left</p>
+                                            <p class="text blue">Zoom Image</p>
+                                        </div>
+                                        <div class="shop-drop-inner">
+                                            <p class="text-header fw-semibold blue"> Shop Pages</p>
+                                            <p class="text blue">Cart</p>
+                                            <p class="text blue">Checkout</p>
+                                            <p class="text blue">My account</p>
+                                            <p class="text blue">Wishlist</p>
+                                            <p class="text blue">Order Tracking</p>
+                                            <p class="text blue">Order on WhatsApp</p>
+                                        </div>
+                                        <div class="shop-drop-inner">
+                                            <p class="text-header fw-semibold blue">Shop Layouts</p>
+                                            <p class="text blue">Two Columns</p>
+                                            <p class="text blue">Three Columns</p>
+                                            <p class="text blue">Three Columns Wide</p>
+                                            <p class="text blue">Four Columns</p>
+                                            <p class="text blue">Four Columns Wide</p>
+                                            <p class="text blue">Five Columns wide</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="meats blue nav-menu d-flex">
+                                    <i class="fa-solid fa-burger"></i>
+                                    <span class="fw-semibold">MEATS&SEAFOOD</span>
+                                </div>
+                                <div class="bakery blue nav-menu d-flex">
+                                    <i class="fa-solid fa-cookie-bite"></i>
+                                    <span class="fw-semibold">BAKERY</span>
+                                </div>
+                                <div class="beverages blue nav-menu">
+                                    <i class="fa-solid fa-mug-hot"></i>
+                                    <span class="fw-semibold">BEVERAGES</span>
+                                </div>
+                                <div class="blog blue nav-menu">
+                                    <span class="fw-semibold">BLOG</span>
+                                </div>
+                                <div class="contact blue nav-menu">
+                                    <span class="fw-semibold">CONTACT</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </header>
+        <main>
+                <section id="coupon">
+                        <div class="row coupon-background justify-content-center">
+                            <div class="col-custom d-flex justify-content-between pt-3">
+                                <div class="col-lg-5 mt-5">
+                                    <div class="coupon-context col-lg-10">
+                                        <span class="text-white">$20 discount for your first order</span>
+                                        <h3 class="text-white">Join our newsletter and get...</h3>
+                                        <p class="text-secondary">Join our email subscription now to get updates on promotions and coupons.</p>
+                                    </div>
+                                    <div class="coupon-subscribe bg-light d-flex align-items-center justify-content-between rounded p-1">
+                                        <i class="fa-regular fa-envelope text-secondary ms-3 me-3"></i>
+                                        <form class="d-flex justify-content-between" action="">
+                                            <input class="border-0" type="text" placeholder="Your email address">
+                                            <button class="border-0 rounded text-white">Subscribe</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mt-5">
+                                    <img src="../images/coupon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-custom d-flex justify-content-between border-bottom mt-2">
+                                <div class="col-lg-3 p-4">
+                                    <div class="coupon-benefits d-flex align-items-center border-end">
+                                        <i class="fa-solid fa-bottle-droplet me-2"></i>
+                                        <p class="m-0 fw-semibold">Everyday fresh products</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 p-4">
+                                    <div class="coupon-benefits d-flex align-items-center border-end">
+                                        <i class="fa-solid fa-truck-fast me-2"></i>
+                                        <p class="m-0 fw-semibold">Free delivery for order over $70</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 p-4">
+                                    <div class="coupon-benefits d-flex align-items-center border-end">
+                                        <i class="fa-solid fa-percent me-2"></i>
+                                        <p class="m-0 fw-semibold">Daily Mega Discounts</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 p-4">
+                                    <div class="coupon-benefits d-flex align-items-center">
+                                        <i class="fa-solid fa-sack-dollar me-2"></i>
+                                        <p class="m-0 fw-semibold">Best price on the market</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+        </main>
+        <footer>
+                <div class="row justify-content-center mt-5 pt-5">
+                    <div class="col-custom grid-custom-5 d-flex justify-content-between">
+                        <div class="footer-categories d-flex flex-column">
+                            <p class="fw-semibold">FRUIT & VEGETABLES</p>
+                            <span>Fresh Vegetables</span>
+                            <span>Herbs & Seasonings</span>
+                            <span>Fresh Fruits</span>
+                            <span>Cuts & Sprouts</span>
+                            <span>Exotic Fruits & Veggies</span>
+                            <span>Packaged Produce</span>
+                            <span>Party Trays</span>
+                        </div>
+                        <div class="footer-categories d-flex flex-column">
+                            <p class="fw-semibold">BREAKFAST & DAIRY</p>
+                            <span>Milk & Flavoured Milk</span>
+                            <span>Butter and Margarine</span>
+                            <span>Cheese</span>
+                            <span>Eggs Substitutes</span>
+                            <span>Honey</span>
+                            <span>Marmalades</span>
+                            <span>Sour Cream and Dips</span>
+                            <span>Yogurt</span>
+                        </div>
+                        <div class="footer-categories d-flex flex-column">
+                            <p class="fw-semibold">MEAT & SEAFOOD</p>
+                            <span>Breakfast Sausage</span>
+                            <span>Dinner Sausage</span>
+                            <span>Beef</span>
+                            <span>Chicken</span>
+                            <span>Sliced Deli Meat</span>
+                            <span>Shrimp</span>
+                            <span>Wild Caught Fillets</span>
+                            <span>Crab and Shellfish</span>
+                            <span>Farm Raised Fillets</span>
+                        </div>
+                        <div class="footer-categories d-flex flex-column">
+                            <p class="fw-semibold">BEVERAGES</p>
+                            <span>Water</span>
+                            <span>Sparkling Water</span>
+                            <span>Soda & Pop</span>
+                            <span>Coffee</span>
+                            <span>Milk & Plant-Based Milk</span>
+                            <span>Tea & Kombucha</span>
+                            <span>Drink Boxes & Pouches</span>
+                            <span>Craft Beer</span>
+                            <span>Wine</span>
+                        </div>
+                        <div class="footer-categories d-flex flex-column">
+                            <p class="fw-semibold">BREADS & BAKERY</p>
+                            <span>Milk & Flavoured Milk</span>
+                            <span>Butter and Margarine</span>
+                            <span>Cheese</span>
+                            <span>Eggs Substitutes</span>
+                            <span>Honey</span>
+                            <span>Marmalades</span>
+                            <span>Sour Cream and Dips</span>
+                            <span>Yogurt</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-5 pt-5">
+                    <div class="col-custom d-flex justify-content-between pb-5 border-bottom">
+                        <div class="col-lg-2 d-flex align-items-center phone">
+                            <div class="phone-logo border rounded-circle d-flex justify-content-center align-items-center me-2">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+                            <div class="phone-text">
+                                <p class="m-0 fs-5 fw-semibold">8 800 555-55</p>
+                                <span class="text-secondary">Working 8:00 - 22:00</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 gap-2 d-flex aplications p-2">
+                            <div class="col-lg-5 d-flex flex-column align-items-end">
+                                <p class="m-0 fw-semibold">Download App on Mobile :</p>
+                                <span>15% discount on your first purchase</span>
+                            </div>
+                            <div class="app-box rounded bg-dark d-flex justify-content-center align-items-center">
+                                <i class="fa-brands fa-google-play text-success me-2"></i>
+                                <div class="app-text">
+                                    <p class="text-white m-0">GET IT ON</p>
+                                    <span class="text-white fw-semibold">Google Play</span>
+                                </div>
+                            </div>
+                            <div class="app-box rounded bg-dark d-flex justify-content-center align-items-center">
+                                <i class="fa-brands fa-apple text-white me-2"></i>
+                                <div class="app-text">
+                                    <p class="text-white m-0">Download on the</p>
+                                    <span class="text-white fw-semibold">App Store</span>
+                                </div>
+                            </div>
+                            <div class="app-social d-flex">
+                                <div class="border rounded-circle p-2 d-flex justify-content-center align-items-center">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                                <div class="border rounded-circle p-2 d-flex justify-content-center align-items-center">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </div>
+                                <div class="border rounded-circle p-2 d-flex justify-content-center align-items-center">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center privacy mt-4 mb-4">
+                    <div class="col-custom d-flex justify-content-between">
+                        <div class="col-lg-6">
+                            <span>Copyright 2022 © Bacola WordPress Theme. All rights reserved. Powered by KlbTheme.</span>
+                        </div>
+                        <div class="col-lg-6 d-flex justify-content-between privacy-hover">
+                            <span>Privacy Policy</span>
+                            <span>Terms and Conditions</span>
+                            <span>Cookie</span>
+                            <div class="privacy-logos">
+                                <i class="fa-brands fa-cc-amex"></i>
+                            </div>
+                            <div class="privacy-logos">
+                                <i class="fa-brands fa-stripe"></i>
+                            </div>
+                            <div class="privacy-logos">
+    
+                            </div>
+                            <div class="privacy-logos">
+                                <i class="fa-brands fa-cc-paypal"></i>
+                            </div>
+                            <div class="privacy-logos">
+                                <i class="fa-brands fa-cc-mastercard"></i>
+                            </div>
+                            <div class="privacy-logos">
+                                <i class="fa-brands fa-cc-visa"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./script.js"></script>
+</html>
