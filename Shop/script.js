@@ -12,4 +12,4 @@ locationClose.onclick = function(){
 };
 cat.onclick = function(){
         catDrop.classList.toggle("close");
-}
+};

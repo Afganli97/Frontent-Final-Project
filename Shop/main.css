@@ -319,6 +319,97 @@
 * .navbar-custom .nav-grid-custom .nav-hover:hover .nav-drop {
   visibility: visible;
 }
+* #shop .grid-custom-2 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+* #shop .col-1 {
+  width: 100%;
+}
+* #shop .col-1 p {
+  font-weight: 500;
+}
+* #shop .col-1 span {
+  font-size: 14px;
+  color: #71778e;
+}
+* #shop .col-1 input {
+  margin-right: 15px;
+}
+* #shop .col-1 .category {
+  width: 100%;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+* #shop .col-1 .category i {
+  font-size: 12px;
+}
+* #shop .col-1 .product-categories {
+  width: 100%;
+}
+* #shop .col-1 .product-categories .categories {
+  width: 100%;
+}
+* #shop .col-1 .filter-by-price {
+  width: 100%;
+}
+* #shop .col-1 .filter-by-price input {
+  width: 100%;
+}
+* #shop .col-1 .filter-by-price .price {
+  width: 100%;
+}
+* #shop .col-1 .filter-by-price .price .price-limit {
+  width: 85%;
+}
+* #shop .col-1 .filter-by-price .price .price-limit p {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+* #shop .col-1 .product-status {
+  width: 100%;
+}
+* #shop .col-1 .brands {
+  width: 100%;
+}
+* #shop .col-1 .img {
+  width: 100%;
+}
+* #shop .col-1 .img img {
+  width: 100%;
+}
+* #shop .col-3 {
+  width: 100%;
+}
+* #shop .col-3 .deliver-banner {
+  width: 100%;
+  height: 250px;
+  background-image: url("../images/bacola-banner-18.jpg");
+  cursor: pointer;
+}
+* #shop .col-3 .deliver-banner .banner-text p {
+  color: #202435;
+  font-size: 24px;
+  font-weight: 300;
+}
+* #shop .col-3 .deliver-banner .banner-text span {
+  font-size: 13px;
+  color: #71778e;
+}
+* #shop .col-3 .deliver-banner .banner-text .delivered-to .delivered {
+  font-size: 30px;
+  font-weight: 500;
+}
+* #shop .col-3 .deliver-banner .banner-text .delivered-to .home {
+  font-size: 30px;
+  font-weight: 500;
+  color: #00b853;
+}
+* #shop .col-3 .filter {
+  width: 100%;
+  background-color: #f7f8fd;
+}
 * #coupon .coupon-background {
   background-color: #233a95;
 }
