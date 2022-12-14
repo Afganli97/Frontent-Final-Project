@@ -1,35 +1,27 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 * .close {
   visibility: hidden !important;
 }
-
 * .col-custom {
   width: 1200px;
 }
-
 * .blue:hover {
-  color: #5c95ff;
+  color: rgb(92, 149, 255);
   cursor: pointer;
 }
-
 * .gab {
   gap: 30px;
 }
-
 * .logo span {
   font-size: 13px;
 }
-
 * .logo .fa-chevron-down {
   font-size: 8px;
 }
-
 * .logo .drop {
   width: 120%;
   height: 100px;
@@ -38,19 +30,15 @@
   left: -20px;
   border-end-end-radius: 5px;
   border-end-start-radius: 5px;
-  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
   background-color: white;
 }
-
 * .logo .open {
   visibility: hidden;
 }
-
 * .logo .logo-hover:hover .open {
   visibility: visible;
 }
-
 * .navbar-custom .location-background {
   position: fixed;
   z-index: 1;
@@ -60,7 +48,6 @@
   top: 0;
   left: 0;
 }
-
 * .navbar-custom .location-box {
   width: 400px;
   height: 500px;
@@ -69,124 +56,94 @@
   border-radius: 10px;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   opacity: 1;
 }
-
 * .navbar-custom .location-box .location-search {
   width: 100%;
   height: 50px;
-  background-color: #eeeeee;
+  background-color: rgb(238, 238, 238);
   border-radius: 8px;
 }
-
 * .navbar-custom .location-box p {
   font-size: 12px;
 }
-
 * .navbar-custom .location-box .x-custom {
   font-size: 20px;
   top: 20px;
   right: 20px;
   cursor: pointer;
 }
-
 * .navbar-custom .location-box input {
   width: 85%;
   height: 100%;
-  background-color: #eeeeee;
+  background-color: rgb(238, 238, 238);
   border: none;
 }
-
 * .navbar-custom .location-box .delivery-price {
   height: 20px;
   border: 1px solid gray;
   border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 * .navbar-custom .location-box .delivery-price span {
   font-size: 10px;
 }
-
 * .navbar-custom .location-box #clear-all span {
   font-size: 10px;
 }
-
 * .navbar-custom .location-box .locations {
   width: 100%;
   height: 60%;
   overflow-y: scroll;
   overflow-x: hidden;
 }
-
 * .navbar-custom .location-box .locations .row {
   height: 40px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 * .navbar-custom .bacola-logo img {
   width: 100%;
   height: 80%;
 }
-
 * .navbar-custom .bacola-logo p {
   font-size: 12px;
 }
-
 * .navbar-custom .location {
   width: 90%;
   height: 100%;
   border: 1px solid gray;
   border-radius: 7px;
 }
-
 * .navbar-custom .h-80 {
   height: 60px;
 }
-
 * .navbar-custom .loc-text {
   width: 80%;
 }
-
 * .navbar-custom .loc-text .text-secondary {
   font-size: 10px;
   margin: 0;
 }
-
 * .navbar-custom .loc-text .text-blue {
   color: blue;
   font-size: 12px;
   margin: 0;
 }
-
 * .navbar-custom .loc-icon {
   width: 20%;
 }
-
 * .navbar-custom .search {
   width: 70%;
   height: 100%;
-  background-color: #f0f0f0;
+  background-color: rgb(240, 240, 240);
   border-radius: 8px;
   padding: 0 10px;
   position: relative;
 }
-
 * .navbar-custom .search .search-icon {
   width: 70px;
   position: absolute;
@@ -194,52 +151,43 @@
   top: 20px;
   right: 5px;
 }
-
 * .navbar-custom .search .search-icon i {
   font-size: 25px;
 }
-
 * .navbar-custom .search .search-icon .fa-xmark {
   visibility: hidden;
 }
-
 * .navbar-custom .search .search-form {
   width: 100%;
   height: 100%;
 }
-
 * .navbar-custom .search .search-input {
   width: 100%;
   height: 100%;
-  background-color: #f0f0f0;
+  background-color: rgb(240, 240, 240);
   border: none;
 }
-
 * .navbar-custom .basket-icons {
   width: 30%;
   height: 100%;
 }
-
 * .navbar-custom .basket-icons .account-icon {
   width: 40px;
   height: 40px;
   border: 1px solid gray;
   border-radius: 50%;
 }
-
 * .navbar-custom .basket-icons .total-price {
   width: 40px;
   height: 40px;
 }
-
 * .navbar-custom .basket-icons .basket-icon {
   width: 40px;
   height: 40px;
-  background-color: #f8b9bc;
+  background-color: rgb(248, 185, 188);
   border-radius: 50%;
   position: relative;
 }
-
 * .navbar-custom .basket-icons .basket-icon .basket-count {
   width: 17px;
   height: 17px;
@@ -249,15 +197,12 @@
   top: 0;
   right: 0;
 }
-
 * .navbar-custom .basket-icons .basket-hover:hover .card-hover {
   visibility: visible;
 }
-
 * .navbar-custom .basket-icons .card-hover > p {
   font-size: 13px;
 }
-
 * .navbar-custom .basket-icons .card-hover {
   width: 400px;
   height: 250px;
@@ -269,26 +214,21 @@
   top: 50px;
   visibility: hidden;
 }
-
 * .navbar-custom .basket-icons .card-hover .card-hover-details {
   width: 80%;
   height: 80%;
 }
-
 * .navbar-custom .basket-icons .card-hover .card-hover-details i {
   font-size: 50px;
   color: red;
 }
-
 * .navbar-custom .categories {
   border-radius: 30px;
 }
-
 * .navbar-custom .categories .all-categories {
   font-size: 15px;
   color: white;
 }
-
 * .navbar-custom .categories .categories-count {
   width: 100px;
   height: 30px;
@@ -297,11 +237,9 @@
   bottom: -17px;
   left: 50px;
 }
-
 * .navbar-custom .categories .categories-count p {
   font-size: 9px;
 }
-
 * .navbar-custom .categories .categories-drop {
   width: 260px;
   height: 500px;
@@ -311,27 +249,21 @@
   left: 0;
   background-color: white;
 }
-
 * .navbar-custom .categories .categories-drop .inner-categories {
   height: 73%;
 }
-
 * .navbar-custom .categories .categories-drop .inner-categories p {
   font-size: 13px;
 }
-
 * .navbar-custom .categories .categories-drop .inner-categories span {
   font-size: 13px;
 }
-
 * .navbar-custom .categories .categories-drop .categories-more {
   height: 27%;
 }
-
 * .navbar-custom .categories .categories-drop .categories-more p {
   font-size: 15px;
 }
-
 * .navbar-custom .categories .categories-drop .cat-drop {
   width: 260px;
   height: 500px;
@@ -341,18 +273,13 @@
   background-color: white;
   visibility: hidden;
 }
-
 * .navbar-custom .categories .categories-drop .cat-hover:hover .cat-drop {
   visibility: visible;
 }
-
 * .navbar-custom .nav-grid-custom {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-
 * .navbar-custom .nav-grid-custom .nav-drop {
   position: absolute;
   visibility: hidden;
@@ -360,22 +287,18 @@
   background-color: white;
   border-radius: 5px;
 }
-
 * .navbar-custom .nav-grid-custom .nav-menu span {
   font-size: 13px;
 }
-
 * .navbar-custom .nav-grid-custom .nav-menu .home-drop {
   width: 150px;
   height: 200px;
   top: 25px;
   left: -20px;
 }
-
 * .navbar-custom .nav-grid-custom .nav-menu .home-drop p {
   font-size: 12px;
 }
-
 * .navbar-custom .nav-grid-custom .nav-menu .shop-drop {
   width: 100%;
   height: 300px;
@@ -383,124 +306,97 @@
   left: 0;
   background-color: white;
 }
-
 * .navbar-custom .nav-grid-custom .nav-menu .shop-drop .shop-drop-inner {
   padding-top: 60px;
   width: 300px;
 }
-
 * .navbar-custom .nav-grid-custom .nav-menu .shop-drop .shop-drop-inner .text-header {
   color: blue;
 }
-
 * .navbar-custom .nav-grid-custom .nav-menu .shop-drop .shop-drop-inner .text {
   font-size: 12px;
 }
-
 * .navbar-custom .nav-grid-custom .nav-hover:hover .nav-drop {
   visibility: visible;
 }
-
 * #login .login-box {
   width: 500px;
   height: 500px;
 }
-
 * #login .login-box .login-box-text .login-register {
   color: #a8a8a8;
 }
-
 * #login .login-box span {
   cursor: pointer;
 }
-
 * #login .login-box .animation-box {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-
 * #login .login-box .animation-box .login-animate {
   width: 200%;
   height: 100%;
   position: absolute;
   left: 0;
 }
-
 * #login .login-box .animation-box .login-animate .login-form {
   width: 100%;
 }
-
 * #login .login-box .animation-box .login-animate .login-form form {
   width: 100%;
 }
-
 * #login .login-box .animation-box .login-animate .login-form form .input-gray {
   width: 100%;
   height: 45px;
   background-color: #f3f4f7;
 }
-
 * #login .login-box .animation-box .login-animate .login-form form button {
   width: 100%;
   height: 45px;
   background-color: #233a95;
   color: white;
 }
-
 * #login .login-box .animation-box .login-animate .login-input p {
   color: #48bff9;
   cursor: pointer;
 }
-
 * #login .login-box .animation-box .login-animate .login-input p:hover {
   color: #233a95;
   text-decoration: underline;
 }
-
 * #login .login-box .animation-box .login-animate .register-input p {
   font-size: 12px;
 }
-
 * #login .login-box .animation-box .login-animate .register-input p span {
   color: red;
   text-decoration: underline;
   cursor: pointer;
 }
-
 * #coupon .coupon-background {
   background-color: #233a95;
 }
-
 * #coupon .coupon-background .coupon-subscribe i {
   font-size: 18px;
 }
-
 * #coupon .coupon-background .coupon-subscribe form {
   width: 90%;
 }
-
 * #coupon .coupon-background .coupon-subscribe form button {
   width: 100px;
   height: 50px;
   background-color: #233a95;
 }
-
 * #coupon .coupon-benefits p {
   font-size: 13px;
 }
-
 * footer .grid-custom-5 {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
-
 * footer .footer-categories p {
   font-size: 15px;
 }
-
 * footer .footer-categories span {
   font-size: 14px;
   color: #71778e;
@@ -508,62 +404,48 @@
   line-height: 25px;
   cursor: pointer;
 }
-
 * footer .phone .phone-logo {
   width: 40px;
   height: 40px;
 }
-
 * footer .phone span {
   font-size: 12px;
 }
-
 * footer .aplications p {
   font-size: 15px;
 }
-
 * footer .aplications span {
   font-size: 13px;
   color: #71778e;
 }
-
 * footer .aplications .app-box {
   width: 220px;
   cursor: pointer;
 }
-
 * footer .aplications .app-box .app-text p {
   font-size: 7px;
 }
-
 * footer .aplications .app-box .app-text span {
   font-size: 12px;
 }
-
 * footer .aplications .app-social {
   width: 200px;
   height: 30px;
   cursor: pointer;
 }
-
 * footer .aplications .app-social i {
   color: #233a95;
 }
-
 * footer .privacy span {
   font-size: 12px;
   color: #71778e;
 }
-
 * footer .privacy i {
   font-size: 25px;
 }
-
 * footer .privacy .privacy-hover *:hover {
   cursor: pointer;
 }
-
 * footer .privacy .privacy-hover span:hover {
   text-decoration: underline;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
