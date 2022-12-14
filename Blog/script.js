@@ -12,4 +12,20 @@ locationClose.onclick = function(){
 };
 cat.onclick = function(){
         catDrop.classList.toggle("close");
-}
+};
+let click = document.querySelectorAll(".click");
+let col3 = document.querySelectorAll(".col-3");
+
+click.forEach(element => {
+    element.onclick = function(){
+        col3.forEach(col => {
+            if (col.classList.contains("d-none")) {
+                col.classList.remove("d-none");
+            }
+            else{
+                col.classList.add("d-none");
+            }
+        });
+        window.scrollTo(0, 0);
+    }
+});
