@@ -429,7 +429,40 @@
             .filter{
                 width: 100%;
                 background-color: #f7f8fd;
+                .left{
+                    width: 80%;
+                    span{
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
+                .right{
+                    width: 20%;
+                    span{
+                        font-size: 14px;
+                        color: #71778e;
+                    }
+                }
             }
+        }
+        .shop-carts{
+            width: 100%;
+        }
+        .shop-grid-1{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .shop-grid-2{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .shop-grid-3{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .shop-grid-4{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
         }
     }
     #coupon{
@@ -524,6 +557,107 @@
             .privacy-hover span:hover{
                 text-decoration: underline;
             }
+        }
+    }
+    .product-card{
+        width: 100%;
+        background-color: white;
+        img{
+            width: 100%;
+        }
+        .in-stock{
+            color: #3cc87c;
+            font-size: 11px;
+            font-weight: 700;
+        }
+        .stars{
+            font-size: 12px;
+            .yellow{
+                color: #ffcd00;
+            }
+            .gray{
+                color: #d9d9e9;
+            }
+        }
+        .recomended{
+            position: absolute;
+            top: 42px;
+            z-index: 1;
+            background-color: #71778e;
+            color: white;
+            width: 100px;
+            height: 25px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .organic{
+            position: absolute;
+            top: 42px;
+            z-index: 1;
+            background-color: #e5f8ed;
+            color: #108e53;
+            width: 75px;
+            height: 25px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .card-description{
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .buttons{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            visibility: hidden;
+            cursor: pointer;
+            .circle{
+                width: 40px;
+                height: 40px;
+                i{
+                    font-size: 18px;
+                }
+            }
+        }
+        .add-tocards{
+            width: 80%;
+            height: 35px;
+            position: absolute;
+            bottom: 10px;
+            left: auto;
+            background-color: #233a95;
+            color: white;
+            font-size: 13px;
+            visibility: hidden;
+            cursor: pointer;
+        }
+        img{
+            cursor: pointer;
+        }
+    }
+    .product-card:hover{
+        border: 1px solid gray !important;
+        border-radius: 8px;
+        z-index: 2;
+        height: 112%;
+        box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2);
+        .buttons{
+            visibility: visible;
+        }
+        .add-tocards{
+            visibility: visible;
+        }
+        .circle:hover{
+            background-color: #233a95;
+            color: white;
         }
     }
 }

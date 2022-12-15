@@ -410,6 +410,39 @@
   width: 100%;
   background-color: #f7f8fd;
 }
+* #shop .col-3 .filter .left {
+  width: 80%;
+}
+* #shop .col-3 .filter .left span {
+  font-size: 14px;
+  font-weight: 500;
+}
+* #shop .col-3 .filter .right {
+  width: 20%;
+}
+* #shop .col-3 .filter .right span {
+  font-size: 14px;
+  color: #71778e;
+}
+* #shop .shop-carts {
+  width: 100%;
+}
+* #shop .shop-grid-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+* #shop .shop-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+* #shop .shop-grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+* #shop .shop-grid-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 * #coupon .coupon-background {
   background-color: #233a95;
 }
@@ -485,4 +518,105 @@
 }
 * footer .privacy .privacy-hover span:hover {
   text-decoration: underline;
+}
+* .product-card {
+  width: 100%;
+  background-color: white;
+}
+* .product-card img {
+  width: 100%;
+}
+* .product-card .in-stock {
+  color: #3cc87c;
+  font-size: 11px;
+  font-weight: 700;
+}
+* .product-card .stars {
+  font-size: 12px;
+}
+* .product-card .stars .yellow {
+  color: #ffcd00;
+}
+* .product-card .stars .gray {
+  color: #d9d9e9;
+}
+* .product-card .recomended {
+  position: absolute;
+  top: 42px;
+  z-index: 1;
+  background-color: #71778e;
+  color: white;
+  width: 100px;
+  height: 25px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+* .product-card .organic {
+  position: absolute;
+  top: 42px;
+  z-index: 1;
+  background-color: #e5f8ed;
+  color: #108e53;
+  width: 75px;
+  height: 25px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+* .product-card .card-description {
+  font-size: 14px;
+  font-weight: 500;
+}
+* .product-card .buttons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  visibility: hidden;
+  cursor: pointer;
+}
+* .product-card .buttons .circle {
+  width: 40px;
+  height: 40px;
+}
+* .product-card .buttons .circle i {
+  font-size: 18px;
+}
+* .product-card .add-tocards {
+  width: 80%;
+  height: 35px;
+  position: absolute;
+  bottom: 10px;
+  left: auto;
+  background-color: #233a95;
+  color: white;
+  font-size: 13px;
+  visibility: hidden;
+  cursor: pointer;
+}
+* .product-card img {
+  cursor: pointer;
+}
+* .product-card:hover {
+  border: 1px solid gray !important;
+  border-radius: 8px;
+  z-index: 2;
+  height: 112%;
+  box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+* .product-card:hover .buttons {
+  visibility: visible;
+}
+* .product-card:hover .add-tocards {
+  visibility: visible;
+}
+* .product-card:hover .circle:hover {
+  background-color: #233a95;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
