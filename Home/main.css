@@ -382,19 +382,19 @@
   font-size: 12px;
   font-weight: 600;
 }
-* .product-card .in-stock {
+* .stars {
+  font-size: 12px;
+}
+* .stars .yellow {
+  color: #ffcd00;
+}
+* .stars .gray {
+  color: #d9d9e9;
+}
+* .in-stock {
   color: #3cc87c;
   font-size: 11px;
   font-weight: 700;
-}
-* .product-card .stars {
-  font-size: 12px;
-}
-* .product-card .stars .yellow {
-  color: #ffcd00;
-}
-* .product-card .stars .gray {
-  color: #d9d9e9;
 }
 * .product-card .recomended {
   position: absolute;

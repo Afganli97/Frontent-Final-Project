@@ -145,7 +145,7 @@ let products = [
         price2: "4.49",
         discount: "19",
         type: 1,
-        img: "../images/Products/product-image-50-346x310.jpg",
+        img: "../images/Products/product-image-50.jpg",
         count: 0
     },
     {
@@ -341,3 +341,4 @@ let products = [
         count: 0
     }
 ];
+localStorage.setItem("products",JSON.stringify(products));
