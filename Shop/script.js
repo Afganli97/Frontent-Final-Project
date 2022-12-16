@@ -307,8 +307,10 @@ localStorage.setItem("products",JSON.stringify(products));
 
 let productItems = JSON.parse(localStorage.getItem("products"));
 let shopCarts = document.querySelector(".shop-carts");
+let count = 8;
 
 function shows(num){
+    shopCarts.innerHTML = "";
 productItems.forEach(element => {
     let product = document.createElement("div");
     product.classList.add("product-card", "border", "p-3", "position-relative");
@@ -369,12 +371,15 @@ productItems.forEach(element => {
     stars.append(secondary, buttons, addToCards);
     prices.append(price1, price2);
     product.append(img, p, inStock, stars, prices, discount);
-    shopCarts.append(product);
-    if (num == (element.id + 1)) {
-        
+    if (num <element.id) {
+        product.classList.add("d-none");
     }
+    shopCarts.append(product);
 });
 };
+
+shows(count);
+
 let cellValues = document.querySelectorAll(".cell-value");
 let cellArr = [...cellValues];
 cellValues.forEach(element => {
@@ -398,6 +403,7 @@ showValue.onclick = function(){
 let showValues = document.querySelectorAll(".show-value-click");
 showValues.forEach(element => {
     element.onclick = function(){
-        
+        showValue.firstElementChild.innerHTML = element.innerHTML;
+        shows(element.innerHTML);
     }
 });
