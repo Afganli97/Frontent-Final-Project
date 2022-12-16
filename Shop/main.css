@@ -417,12 +417,29 @@
   font-size: 14px;
   font-weight: 500;
 }
+* #shop .col-3 .filter .left .cell-value {
+  cursor: pointer;
+}
 * #shop .col-3 .filter .right {
   width: 20%;
 }
 * #shop .col-3 .filter .right span {
   font-size: 14px;
   color: #71778e;
+}
+* #shop .col-3 .filter .right .show-value-hiden {
+  position: absolute;
+  z-index: 3;
+  top: 35px;
+  left: 64px;
+}
+* #shop .col-3 .filter .right .show-value {
+  cursor: pointer;
+}
+* #shop .col-3 .filter .right .show-value span {
+  font-size: 16px;
+  color: #202435;
+  font-weight: 500;
 }
 * #shop .shop-carts {
   width: 100%;
@@ -619,4 +636,19 @@
 * .product-card:hover .circle:hover {
   background-color: #233a95;
   color: white;
+}
+* .discount-card {
+  position: absolute;
+  top: 15px;
+  z-index: 1;
+  background-color: #2bbef9;
+  color: white;
+  width: 50px;
+  height: 25px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
 }/*# sourceMappingURL=main.css.map */

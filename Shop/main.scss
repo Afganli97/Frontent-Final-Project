@@ -435,12 +435,29 @@
                         font-size: 14px;
                         font-weight: 500;
                     }
+                    .cell-value{
+                        cursor: pointer;
+                    }
                 }
                 .right{
                     width: 20%;
                     span{
                         font-size: 14px;
                         color: #71778e;
+                    }
+                    .show-value-hiden{
+                        position: absolute;
+                        z-index: 3;
+                        top: 35px;
+                        left: 64px;
+                    }
+                    .show-value{
+                        cursor: pointer;
+                        span{
+                            font-size: 16px;
+                            color: #202435;
+                            font-weight: 500;
+                        }
                     }
                 }
             }
@@ -659,5 +676,20 @@
             background-color: #233a95;
             color: white;
         }
+    }
+    .discount-card{
+        position: absolute;
+        top: 15px;
+        z-index: 1;
+        background-color: #2bbef9;
+        color: white;
+        width: 50px;
+        height: 25px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        font-weight: 600;
     }
 }
