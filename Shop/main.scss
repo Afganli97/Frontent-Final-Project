@@ -461,6 +461,20 @@
                     }
                 }
             }
+            .blog-nav{
+                .circle{
+                    width: 35px;
+                    height: 35px;
+                }
+                .clicked{
+                    background-color: #2bbef9;
+                    color: white;
+                }
+                .click{
+                    cursor: pointer;
+                }
+
+            }
         }
         .shop-carts{
             width: 100%;

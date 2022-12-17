@@ -441,6 +441,17 @@
   color: #202435;
   font-weight: 500;
 }
+* #shop .col-3 .blog-nav .circle {
+  width: 35px;
+  height: 35px;
+}
+* #shop .col-3 .blog-nav .clicked {
+  background-color: #2bbef9;
+  color: white;
+}
+* #shop .col-3 .blog-nav .click {
+  cursor: pointer;
+}
 * #shop .shop-carts {
   width: 100%;
 }

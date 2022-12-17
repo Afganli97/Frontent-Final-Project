@@ -307,9 +307,17 @@ localStorage.setItem("products",JSON.stringify(products));
 
 let productItems = JSON.parse(localStorage.getItem("products"));
 let shopCarts = document.querySelector(".shop-carts");
+let blogNav = document.querySelector(".blog-nav");
+let showValue = document.querySelector(".show-value");
+let pages = document.querySelectorAll(".nav-page");
+let cellValues = document.querySelectorAll(".cell-value");
+let showValues = document.querySelectorAll(".show-value-click");
+let cellArr = [...cellValues];
+let circlesArr = [...pages];
 let count = 8;
+let showpPage = 1;
 
-function shows(num){
+function shows(num, page){
     shopCarts.innerHTML = "";
 productItems.forEach(element => {
     let product = document.createElement("div");
@@ -371,8 +379,26 @@ productItems.forEach(element => {
     stars.append(secondary, buttons, addToCards);
     prices.append(price1, price2);
     product.append(img, p, inStock, stars, prices, discount);
-    if (num <element.id) {
-        product.classList.add("d-none");
+    if (num <element.id){
+        product.classList.add("d-none");1995
+        
+    }
+    switch (page) {
+        case 1:
+            
+        break;
+        case 2:
+            
+        break;
+        case 3:
+            
+        break;
+        case 4:
+            
+        break;
+        case 5:
+            
+        break;
     }
     shopCarts.append(product);
 });
@@ -380,8 +406,7 @@ productItems.forEach(element => {
 
 shows(count);
 
-let cellValues = document.querySelectorAll(".cell-value");
-let cellArr = [...cellValues];
+
 cellValues.forEach(element => {
     element.onclick = function(){
         for (let i = 0; i < cellArr.length; i++) {
@@ -396,14 +421,40 @@ cellValues.forEach(element => {
     }
 });
 
-let showValue = document.querySelector(".show-value");
+
 showValue.onclick = function(){
     showValue.lastElementChild.classList.toggle("d-none");
 }
-let showValues = document.querySelectorAll(".show-value-click");
+
 showValues.forEach(element => {
     element.onclick = function(){
         showValue.firstElementChild.innerHTML = element.innerHTML;
-        shows(element.innerHTML);
+        count = element.innerHTML;
+        shows(count);
+        switch (element.innerHTML){
+            case "8":
+                circles.forEach(element => {element.classList.remove("d-none");});
+                blogNav.classList.remove("d-none");
+                break;
+            case "16":
+                circles.forEach(element => {element.classList.remove("d-none");});
+                blogNav.classList.remove("d-none");
+                pages[2].classList.add("d-none");
+                break;
+            case "24":
+                pages.forEach(element => {element.classList.remove("d-none");});
+                blogNav.classList.add("d-none");
+                break;
+        }
     }
 });
+pages.forEach(element => {
+    element.onclick = function(){
+        pagesArr.indexOf(element)
+        
+    }
+})
+
+function clickPage(page){
+
+}
