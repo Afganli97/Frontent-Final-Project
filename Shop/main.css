@@ -452,7 +452,10 @@
 * #shop .col-3 .blog-nav .click {
   cursor: pointer;
 }
-* #shop .shop-carts {
+* #shop .shop-show-carts {
+  width: 100%;
+}
+* #shop .shop-show-carts .shop-carts {
   width: 100%;
 }
 * #shop .shop-grid-1 {

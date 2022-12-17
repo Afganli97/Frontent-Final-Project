@@ -476,8 +476,11 @@
 
             }
         }
-        .shop-carts{
+        .shop-show-carts{
             width: 100%;
+            .shop-carts{
+                width: 100%;
+            }
         }
         .shop-grid-1{
             display: grid;

@@ -306,113 +306,126 @@ let products = [
 localStorage.setItem("products",JSON.stringify(products));
 
 let productItems = JSON.parse(localStorage.getItem("products"));
-let shopCarts = document.querySelector(".shop-carts");
+let shopShowCarts = document.querySelector(".shop-show-carts");
 let blogNav = document.querySelector(".blog-nav");
 let showValue = document.querySelector(".show-value");
 let pages = document.querySelectorAll(".nav-page");
+let next = document.querySelector(".nav-next");
+let prev = document.querySelector(".nav-prev");
 let cellValues = document.querySelectorAll(".cell-value");
 let showValues = document.querySelectorAll(".show-value-click");
 let cellArr = [...cellValues];
-let circlesArr = [...pages];
 let count = 8;
-let showpPage = 1;
 
-function shows(num, page){
-    shopCarts.innerHTML = "";
-productItems.forEach(element => {
-    let product = document.createElement("div");
-    product.classList.add("product-card", "border", "p-3", "position-relative");
-    let img = document.createElement("img");
-    img.setAttribute("src", element.img);
-    let p = document.createElement("p");
-    p.classList.add("card-description", "blue");
-    p.innerHTML = element.name;
-    let inStock = document.createElement("span");
-    inStock.classList.add("in-stock");
-    inStock.innerHTML = "IN STOCK";
-    let stars = document.createElement("div");
-    stars.classList.add("stars", "d-flex", "align-items-center");
-    for (let i = 1; i < 6; i++) {
-        let star = document.createElement("i");
-        if (element.stars < i ){
-            star.classList.add("fa-solid", "fa-star", "gray");
+let shopCartsPage1 = document.createElement("div");
+let shopCartsPage2 = document.createElement("div");
+let shopCartsPage3 = document.createElement("div");
+shopCartsPage1.classList.add("shop-carts", "shop-grid-4");
+shopCartsPage2.classList.add("shop-carts", "shop-grid-4");
+shopCartsPage3.classList.add("shop-carts", "shop-grid-4");
+
+function shows(num){
+    shopShowCarts.innerHTML = "";
+    shopCartsPage1.innerHTML = "";
+    shopCartsPage2.innerHTML = "";
+    shopCartsPage3.innerHTML = "";
+    productItems.forEach(element => {
+        let product = document.createElement("div");
+        product.classList.add("product-card", "border", "p-3", "position-relative");
+        product.id = element.id;
+        let img = document.createElement("img");
+        img.setAttribute("src", element.img);
+        let p = document.createElement("p");
+        p.classList.add("card-description", "blue");
+        p.innerHTML = element.name;
+        let inStock = document.createElement("span");
+        inStock.classList.add("in-stock");
+        inStock.innerHTML = "IN STOCK";
+        let stars = document.createElement("div");
+        stars.classList.add("stars", "d-flex", "align-items-center");
+        for (let i = 1; i < 6; i++) {
+            let star = document.createElement("i");
+            if (element.stars < i ){
+                star.classList.add("fa-solid", "fa-star", "gray");
+            }
+            else{
+                star.classList.add("fa-solid", "fa-star", "yellow");
+            }
+            star.classList.add("me-1");
+            stars.append(star);
+        }
+        let secondary = document.createElement("span");
+        secondary.classList.add("text-secondary");
+        secondary.innerHTML = 1;
+        let buttons = document.createElement("div");
+        buttons.classList.add("buttons");
+        let circle1 = document.createElement("div");
+        circle1.classList.add("circle", "d-flex", "justify-content-center", "align-items-center", "border", "rounded-circle");
+        let maximize = document.createElement("i");
+        maximize.classList.add("fa-solid", "fa-maximize");
+        let circle2 = document.createElement("div");
+        circle2.classList.add("circle", "d-flex", "justify-content-center", "align-items-center", "border", "rounded-circle", "mt-2");
+        let regular = document.createElement("i");
+        regular.classList.add("fa-regular", "fa-heart");
+        let addToCards = document.createElement("div");
+        addToCards.classList.add("add-tocards", "d-flex", "justify-content-center", "align-items-center", "rounded-pill");
+        let addToCart = document.createElement("span");
+        addToCart.classList.add("fw-semibold");
+        addToCart.innerHTML = "Add to cart";
+        let prices = document.createElement("div");
+        prices.classList.add("prices");
+        let price1 = document.createElement("span");
+        price1.classList.add("text-muted", "text-decoration-line-through", "fs-6", "fw-semibold");
+        price1.innerHTML = element.price1;
+        let price2 = document.createElement("span");
+        price2.classList.add("text-danger", "fs-5", "fw-semibold");
+        price2.innerHTML = element.price2;
+        let discount = document.createElement("div");
+        discount.classList.add("discount-card");
+        discount.innerHTML = element.discount + "%";
+        circle1.append(maximize);
+        circle2.append(regular);
+        buttons.append(circle1,circle2);
+        addToCards.append(addToCart);
+        stars.append(secondary, buttons, addToCards);
+        prices.append(price1, price2);
+        product.append(img, p, inStock, stars, prices, discount);
+        if (num >= element.id){
+            shopCartsPage1.append(product);
+        }
+        else if ((num * 2) >= element.id) {
+            shopCartsPage2.append(product);
         }
         else{
-            star.classList.add("fa-solid", "fa-star", "yellow");
+            shopCartsPage3.append(product);
         }
-        star.classList.add("me-1");
-        stars.append(star);
-    }
-    let secondary = document.createElement("span");
-    secondary.classList.add("text-secondary");
-    secondary.innerHTML = 1;
-    let buttons = document.createElement("div");
-    buttons.classList.add("buttons");
-    let circle1 = document.createElement("div");
-    circle1.classList.add("circle", "d-flex", "justify-content-center", "align-items-center", "border", "rounded-circle");
-    let maximize = document.createElement("i");
-    maximize.classList.add("fa-solid", "fa-maximize");
-    let circle2 = document.createElement("div");
-    circle2.classList.add("circle", "d-flex", "justify-content-center", "align-items-center", "border", "rounded-circle", "mt-2");
-    let regular = document.createElement("i");
-    regular.classList.add("fa-regular", "fa-heart");
-    let addToCards = document.createElement("div");
-    addToCards.classList.add("add-tocards", "d-flex", "justify-content-center", "align-items-center", "rounded-pill");
-    let addToCart = document.createElement("span");
-    addToCart.classList.add("fw-semibold");
-    addToCart.innerHTML = "Add to cart";
-    let prices = document.createElement("div");
-    prices.classList.add("prices");
-    let price1 = document.createElement("span");
-    price1.classList.add("text-muted", "text-decoration-line-through", "fs-6", "fw-semibold");
-    price1.innerHTML = element.price1;
-    let price2 = document.createElement("span");
-    price2.classList.add("text-danger", "fs-5", "fw-semibold");
-    price2.innerHTML = element.price2;
-    let discount = document.createElement("div");
-    discount.classList.add("discount-card");
-    discount.innerHTML = element.discount + "%";
-    circle1.append(maximize);
-    circle2.append(regular);
-    buttons.append(circle1,circle2);
-    addToCards.append(addToCart);
-    stars.append(secondary, buttons, addToCards);
-    prices.append(price1, price2);
-    product.append(img, p, inStock, stars, prices, discount);
-    if (num <element.id){
-        product.classList.add("d-none");1995
-        
-    }
-    switch (page) {
-        case 1:
-            
+    });
+    let page = document.querySelector(".clicked");
+    switch (page.innerHTML) {
+        case "1":
+            shopShowCarts.append(shopCartsPage1);
         break;
-        case 2:
-            
+        case "2":
+            shopShowCarts.append(shopCartsPage2);
         break;
-        case 3:
-            
-        break;
-        case 4:
-            
-        break;
-        case 5:
-            
+        case "3":
+            shopShowCarts.append(shopCartsPage3);
         break;
     }
-    shopCarts.append(product);
-});
 };
 
 shows(count);
 
+let addToCard = document.querySelectorAll(".add-tocards");
 
 cellValues.forEach(element => {
     element.onclick = function(){
         for (let i = 0; i < cellArr.length; i++) {
             cellValues[i].classList.remove("text-secondary");
             if (cellArr[i] == element) {
-                shopCarts.setAttribute("class", `shop-carts mt-5 shop-grid-${i+1}`)
+                shopCartsPage1.setAttribute("class", `shop-carts shop-grid-${i+1}`);
+                shopCartsPage2.setAttribute("class", `shop-carts shop-grid-${i+1}`);
+                shopCartsPage3.setAttribute("class", `shop-carts shop-grid-${i+1}`);
             }
             else{
                 cellValues[i].classList.add("text-secondary");
@@ -430,14 +443,13 @@ showValues.forEach(element => {
     element.onclick = function(){
         showValue.firstElementChild.innerHTML = element.innerHTML;
         count = element.innerHTML;
-        shows(count);
         switch (element.innerHTML){
             case "8":
-                circles.forEach(element => {element.classList.remove("d-none");});
+                pages.forEach(element => {element.classList.remove("d-none");});
                 blogNav.classList.remove("d-none");
                 break;
             case "16":
-                circles.forEach(element => {element.classList.remove("d-none");});
+                pages.forEach(element => {element.classList.remove("d-none");});
                 blogNav.classList.remove("d-none");
                 pages[2].classList.add("d-none");
                 break;
@@ -446,15 +458,69 @@ showValues.forEach(element => {
                 blogNav.classList.add("d-none");
                 break;
         }
+        shows(count);
+        addToCard = document.querySelectorAll(".add-tocards");
+        addFunc();
     }
 });
 pages.forEach(element => {
     element.onclick = function(){
-        pagesArr.indexOf(element)
-        
+        pages.forEach(el => {
+            el.classList.remove("clicked");
+        });
+        element.classList.add("clicked");
+        switch (element.innerHTML) {
+            case "1":
+                prev.classList.remove("d-none");
+                prev.classList.add("d-none");
+                next.classList.remove("d-none");
+            break;
+            case "2":
+                if (count > 8) {
+                    next.classList.remove("d-none");
+                    next.classList.add("d-none");
+                    prev.classList.remove("d-none");
+                }
+                else{
+                    next.classList.remove("d-none");
+                    prev.classList.remove("d-none");
+                }
+            break;
+            case "3":
+                next.classList.remove("d-none");
+                next.classList.add("d-none");
+                prev.classList.remove("d-none");
+            break;
+        }
+        shows(count);
+        addToCard = document.querySelectorAll(".add-tocards");
+        addFunc();
     }
 })
 
-function clickPage(page){
 
+//---------add to basket logic-------
+let basket = JSON.parse(localStorage.getItem("basket"));
+if (!basket) {
+    localStorage.setItem("basket", JSON.stringify([]))
+    basket = JSON.parse(localStorage.getItem("basket"));
+}
+addFunc();
+
+function addFunc() {
+    addToCard.forEach(element => {
+        element.onclick = function(){
+            
+            if (basket.find(el => el.id == this.parentElement.parentElement.id)) {
+                basket.find(el => el.id == this.parentElement.parentElement.id).count++;
+            }
+            else{
+                let product = products.find(el => el.id == this.parentElement.parentElement.id);
+                product.count++;
+                basket.push(product);
+            }
+            localStorage.setItem("basket", JSON.stringify(basket));
+           
+        }
+    });
 }
