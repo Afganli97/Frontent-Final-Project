@@ -13,3 +13,8 @@ locationClose.onclick = function(){
 cat.onclick = function(){
         catDrop.classList.toggle("close");
 }
+let basket = JSON.parse(localStorage.getItem("basket"));
+
+// basket.forEach(element => {
+    
+// });
