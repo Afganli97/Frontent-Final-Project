@@ -335,6 +335,8 @@ function shows(num){
         product.id = element.id;
         let img = document.createElement("img");
         img.setAttribute("src", element.img);
+        img.classList.add("img-click");
+        img.id = element.id;
         let p = document.createElement("p");
         p.classList.add("card-description", "blue");
         p.innerHTML = element.name;
@@ -506,7 +508,8 @@ if (!basket) {
     basket = JSON.parse(localStorage.getItem("basket"));
 }
 addFunc();
-
+let totalPriceNav = document.querySelector(".total-price-nav");
+let sum = 0;
 function addFunc() {
     addToCard.forEach(element => {
         element.onclick = function(){
@@ -524,3 +527,47 @@ function addFunc() {
         }
     });
 }
+let productsHover = document.querySelector(".products-hover");
+
+
+basket.forEach(el => {
+    let product = document.createElement("div");
+    product.classList.add("small-product", "p-2", "border-bottom", "d-flex");
+    let imgDiv = document.createElement("div");
+    imgDiv.classList.add("small-img", "position-relative");
+    let img = document.createElement("img");
+    img.setAttribute("src", el.img);
+    let xRemove = document.createElement("div")
+    xRemove.classList.add("x-remove");
+    xRemove.id = el.id;
+    xRemove.innerHTML = "x";
+    let detailsDiv = document.createElement("div");
+    detailsDiv.classList.add("small-details");
+    let p = document.createElement("p");
+    p.innerHTML = el.name;
+    let spanCount = document.createElement("span");
+    spanCount.classList.add("small-details");
+    spanCount.innerHTML = `${el.count} x `;
+    let spanPrice = document.createElement("span");
+    spanPrice.classList.add("small-price");
+    spanPrice.innerHTML = `$${el.price2}`;
+
+    imgDiv.append(img, xRemove);
+    detailsDiv.append(p, spanCount, spanPrice);
+    product.append(imgDiv, detailsDiv);
+    productsHover.append(product);
+
+    sum += el.count * el.price2;
+    sum = parseInt(sum);
+    productsHover.nextElementSibling.lastElementChild.innerHTML = `$${sum}`;
+
+});
+totalPriceNav.innerHTML = `$${sum}`;
+let removeButtons = document.querySelectorAll(".x-remove");
+removeButtons.forEach(el => {
+    el.onclick = function(){
+        basket = basket.filter(x => x.id != el.id)
+        localStorage.setItem("basket", JSON.stringify(basket));
+        window.location.reload();
+    }
+});

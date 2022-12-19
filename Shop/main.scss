@@ -2,6 +2,83 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    .small-product{
+        width: 100%;
+        img{
+            width: 70px;
+        }
+        p{
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .small-details{
+            span{
+                font-size: 14px;
+                font-weight: 500;
+            }
+            .small-price{
+                color: rgb(194, 62, 62);
+            }
+        }
+    }
+    .x-remove{
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        background-color: rgb(236, 88, 20);
+        color: white;
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .small-subtotal{
+        width: 100%;
+        .subtotal{
+            font-size: 12px;
+            font-weight: 600;
+            color: #c9c9c9;
+        }
+        .subtotal-price{
+            font-weight: 500;
+            color: rgb(214, 57, 57);
+        }
+    }
+    .view-cart{
+        width: 100%;
+        height: 50px;
+        border: 1px solid rgb(185, 185, 185);
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-size: 14px;
+            font-weight: 500;
+            margin: 0;
+        }
+    }
+    .checkout{
+        margin-top: 15px;
+        width: 100%;
+        height: 50px;
+        background-color: rgb(243, 60, 60);
+        border: 1px solid rgb(185, 185, 185);
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-size: 14px;
+            font-weight: 500;
+            margin: 0;
+            color: white;
+        }
+
+    }
     .close{
         visibility: hidden !important;
     }
@@ -211,8 +288,7 @@
                 font-size: 13px;
             }
             .card-hover{
-                width: 400px;
-                height: 250px;
+                width: 700px;
                 position: absolute;
                 z-index: 1;
                 background-color: white;
@@ -228,6 +304,10 @@
                         color: red;
                     }
                 }
+                .card-hover-noempty{
+                    width: 100%;
+                }
+
             }
         }
 

@@ -342,3 +342,15 @@ let products = [
     }
 ];
 localStorage.setItem("products",JSON.stringify(products));
+let shop = document.querySelector(".shop-click");
+let home = document.querySelector(".home-click");
+let blog = document.querySelector(".blog-click");
+let contact = document.querySelector(".contact-click");
+let basket = document.querySelector(".basket-click");
+let account = document.querySelector(".account-click");
+basket.onclick = function(){
+    window.location.href = "../Cart/index.html";
+}
+account.onclick = function(){
+    window.location.href = "../account/index.html";
+}

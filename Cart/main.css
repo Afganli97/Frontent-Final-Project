@@ -354,12 +354,17 @@
   grid-template-columns: 3fr 1fr;
 }
 * #cart .not-empty-basket .col-3 {
-  width: 100%;
+  width: 95%;
+}
+* #cart .not-empty-basket .col-3 .span-price {
+  font-size: 17px;
+  color: #ed4852;
+  font-weight: 600;
 }
 * #cart .not-empty-basket .col-3 .free-shiping-gray {
   width: 100%;
   height: 7px;
-  background-color: #aaaaaa;
+  background-color: #d6d6d6;
   position: relative;
 }
 * #cart .not-empty-basket .col-3 .free-shiping-gray .free-shiping-red {
@@ -373,15 +378,89 @@
 * #cart .not-empty-basket .col-3 table {
   width: 100%;
 }
+* #cart .not-empty-basket .col-3 table .count {
+  height: 100%;
+  align-items: center;
+}
+* #cart .not-empty-basket .col-3 table th {
+  color: #71778e;
+  font-size: 13px;
+}
 * #cart .not-empty-basket .col-3 table tr {
   width: 100%;
   border-bottom: 1px solid #c9c9c9;
 }
 * #cart .not-empty-basket .col-3 table tr img {
-  width: 50px;
+  width: 75px;
+}
+* #cart .not-empty-basket .col-3 table tr .circle {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dbdbdb;
+}
+* #cart .not-empty-basket .col-3 .coupon-remove {
+  width: 100%;
+}
+* #cart .not-empty-basket .col-3 .coupon-remove .coupon {
+  width: 50%;
+  height: 40px;
+}
+* #cart .not-empty-basket .col-3 .coupon-remove .coupon form {
+  width: 100%;
+  height: 100%;
+}
+* #cart .not-empty-basket .col-3 .coupon-remove .coupon form input {
+  width: 70%;
+  height: 100%;
+  background-color: #d1d1d1;
+}
+* #cart .not-empty-basket .col-3 .coupon-remove .coupon form button {
+  width: 28%;
+  height: 100%;
+  background-color: #233a95;
+  color: white;
+}
+* #cart .not-empty-basket .col-3 .coupon-remove .remove-all {
+  width: 15%;
+  height: 40px;
+  background-color: #233a95;
+  color: white;
 }
 * #cart .not-empty-basket .col-1 {
+  width: 95%;
+}
+* #cart .not-empty-basket .col-1 .header {
   width: 100%;
+}
+* #cart .not-empty-basket .col-1 .subtotal-text {
+  font-size: 13px;
+  font-weight: 700;
+}
+* #cart .not-empty-basket .col-1 .shiping-rate {
+  color: #ed4852;
+}
+* #cart .not-empty-basket .col-1 .shiping-right p {
+  font-size: 14px;
+}
+* #cart .not-empty-basket .col-1 .shiping-right span {
+  font-size: 15px;
+}
+* #cart .not-empty-basket .col-1 .change-address p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+* #cart .not-empty-basket .col-1 .proceed {
+  width: 100%;
+  height: 50px;
+  background-color: #ed4852;
+  color: white;
+}
+* #cart .not-empty-basket .col-1 .proceed p {
+  font-size: 14px;
+  font-weight: 500;
 }
 * #coupon .coupon-background {
   background-color: #233a95;
